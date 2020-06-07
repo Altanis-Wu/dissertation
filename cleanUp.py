@@ -35,6 +35,7 @@ for i in range(2006, 2020):
     if i in range(2016, 2020):
         data = data.drop(columns=['55+', '16-34', '35-54'])
     gender = data[['month', 'male', 'female']]
+    #Classify these data based on gender, children, marrial, working, social grade and so on
     gender.to_csv('data/gender/gender_'+str(i)+'.csv', index=0)
     age = data[['month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
     age.to_csv('data/age/age_'+str(i)+'.csv', index=0)
