@@ -34,18 +34,23 @@ for i in range(2006, 2020):
     #Drop the repeated range
     if i in range(2016, 2020):
         data = data.drop(columns=['55+', '16-34', '35-54'])
-    gender = data[['month', 'male', 'female']]
+        data['year'] = data['month'].apply(lambda x: x.split('-')[1])
+        data['month'] = data['month'].apply(lambda x:x.split('-')[0])
+    else:
+        data['year'] = data['month'].apply(lambda x: x.split()[1])
+        data['month'] = data['month'].apply(lambda x: x.split()[0])
+    gender = data[['year', 'month', 'male', 'female']]
     #Classify these data based on gender, children, marrial, working, social grade and so on
     gender.to_csv('data/gender/gender_'+str(i)+'.csv', index=0)
-    age = data[['month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
+    age = data[['year', 'month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
     age.to_csv('data/age/age_'+str(i)+'.csv', index=0)
-    social = data[['month', 'a', 'b', 'c1', 'c2', 'd', 'e']]
+    social = data[['year', 'month', 'a', 'b', 'c1', 'c2', 'd', 'e']]
     social.to_csv('data/social_class/social_'+str(i)+'.csv', index=0)
     if i in range(2016, 2020):
-        marry = data[['month', 'married', 'single', 'separated/widowed/divorced']]
+        marry = data[['year', 'month', 'married', 'single', 'separated/widowed/divorced']]
         marry.to_csv('data/marital/marry_'+str(i)+'.csv', index=0)
-        work = data[['month', 'full time', 'part time', 'other']]
+        work = data[['year', 'month', 'full time', 'part time', 'other']]
         work.to_csv('data/working/work_'+str(i)+'.csv', index=0)
     else:
-        chilren = data[['month', 'yes', 'no']]
+        chilren = data[['year', 'month', 'yes', 'no']]
         chilren.to_csv('data/children/chilren_'+str(i)+'.csv', index=0)
