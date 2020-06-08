@@ -1,56 +1,54 @@
 import pandas as pd
+# list contains the title of useless lines
+list = ['\"unweighted base\"', '\"weighted base\"', '\"month\"', '\"base: all respondents\"', '\n', '\"all scotland"']
 #open the file and read each line to a list
-for i in range(2006, 2020):
-    f = open('original_data/original_attributes_'+str(i)+'.csv', 'r')
-    # list contains the title of useless lines
-    list = ['\"unweighted base\"', '\" start month of trip\"', '\"total\"', '\"weighted base\"']
-    docs = range(2006, 2020)
-    line = f.readline().lower()
+for i in range(2011, 2020):
     input = []
+    output = []
+    f = open('original_data/original_visitor_'+str(i)+'.csv', 'r')
+    line = f.readline().lower()
     # read each lines to the list
     while line:
         input.append(line)
         line = f.readline().lower()
     # close the file
     f.close()
-    output = []
-    # For each line in the list, check if it is useless. If not, add it to the output list
-    for item in input:
-        item = item.split(',')
-        if item[0] == '\"\"' and item[1] == '\"total\"':
-            item[0] = '\"month\"'
-            output.append(','.join(x for x in item))
-        elif not item[0] == '\"\"' and len(item) > 1 and not list.__contains__(item[0]):
-            output.append(','.join(x for x in item))
-    # Open another file to write the output list to CSV file.
-    f = open('data/visitor_attributes_'+str(i)+'.csv', 'w')
-    for item in output:
-        f.write(item)
+    for line in input:
+        line = line.split(',')
+        if line[0] == '\"\"' and line[1] == '\"total\"':
+            line[0] = '\"month\"'
+            output.append(','.join(x for x in line))
+        elif not line[0] == '\"\"' and len(line) > 1 and not list.__contains__(line[0]):
+            output.append(','.join(x for x in line))
+    f = open('transfer/visitor_'+str(i)+'.csv', 'w')
+    for line in output:
+        f.write(line)
     f.close()
-    # Read the new CSV file
-    data = pd.read_csv('data/visitor_attributes_'+str(i)+'.csv')
-    # Drop all columns which all values in column are null
-    data = data.dropna(axis=1, how="all")
-    #Drop the repeated range
-    if i in range(2016, 2020):
-        data = data.drop(columns=['55+', '16-34', '35-54'])
-        data['year'] = data['month'].apply(lambda x: x.split('-')[1])
-        data['month'] = data['month'].apply(lambda x:x.split('-')[0])
-    else:
-        data['year'] = data['month'].apply(lambda x: x.split()[1])
-        data['month'] = data['month'].apply(lambda x: x.split()[0])
-    gender = data[['year', 'month', 'male', 'female']]
-    #Classify these data based on gender, children, marrial, working, social grade and so on
-    gender.to_csv('data/gender/gender_'+str(i)+'.csv', index=0)
-    age = data[['year', 'month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
-    age.to_csv('data/age/age_'+str(i)+'.csv', index=0)
-    social = data[['year', 'month', 'a', 'b', 'c1', 'c2', 'd', 'e']]
-    social.to_csv('data/social_class/social_'+str(i)+'.csv', index=0)
-    if i in range(2016, 2020):
-        marry = data[['year', 'month', 'married', 'single', 'separated/widowed/divorced']]
-        marry.to_csv('data/marital/marry_'+str(i)+'.csv', index=0)
-        work = data[['year', 'month', 'full time', 'part time', 'other']]
-        work.to_csv('data/working/work_'+str(i)+'.csv', index=0)
-    else:
-        chilren = data[['year', 'month', 'yes', 'no']]
-        chilren.to_csv('data/children/chilren_'+str(i)+'.csv', index=0)
+for i in range(2011, 2016):
+    df = pd.read_csv('transfer/visitor_'+str(i)+'.csv')
+    df.columns = ['month', 'total', 'male', 'female', '16-24', '25-34', '35-44', '45-54', '55-64', '65+', 'married', 'not married', 'yes', 'no', 'access to car (1+)', 'no access to car (0)', 'ab', 'c1', 'c2', 'de', 'employed/self-employed (full or part time)', 'in full or part time education', 'unemployed/not working', '']
+    df.to_csv('transfer/visitor_'+str(i)+'.csv', index = 0)
+data = pd.read_csv('transfer/visitor_2011.csv')
+data['year'] = 2011
+#Combine and classify the CSV files
+for i in range(2012, 2020):
+    df = pd.read_csv('transfer/visitor_'+str(i)+'.csv')
+    df['year'] = i
+    data = pd.concat([data, df])
+#Drop the useless columns
+data = data.dropna(axis=1, how="all")
+data = data.drop(columns=['total'])
+gender = data[['year', 'month', 'male', 'female']]
+age = data[['year', 'month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
+married = data[['year', 'month', 'married', 'not married']]
+children = data[['year', 'month', 'yes', 'no']]
+cars = data[['year', 'month', 'access to car (1+)',	'no access to car (0)']]
+social = data[['year', 'month', 'ab', 'c1', 'c2', 'de']]
+working = data[['year', 'month', 'employed/self-employed (full or part time)',	'in full or part time education', 'unemployed/not working']]
+age.to_csv('data/age.csv', index=0)
+gender.to_csv('data/gender.csv', index=0)
+married.to_csv('data/married.csv', index=0)
+children.to_csv('data/children.csv', index=0)
+cars.to_csv('data/cars.csv', index=0)
+social.to_csv('data/social.csv', index=0)
+working.to_csv('data/working.csv', index=0)
