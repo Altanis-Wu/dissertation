@@ -20,19 +20,19 @@ for i in range(2011, 2020):
             output.append(','.join(x for x in line))
         elif not line[0] == '\"\"' and len(line) > 1 and not list.__contains__(line[0]):
             output.append(','.join(x for x in line))
-    f = open('transfer/visitor_'+str(i)+'.csv', 'w')
+    f = open('transfer/visitor/visitor_'+str(i)+'.csv', 'w')
     for line in output:
         f.write(line)
     f.close()
 for i in range(2011, 2016):
-    df = pd.read_csv('transfer/visitor_'+str(i)+'.csv')
+    df = pd.read_csv('transfer/visitor/visitor_'+str(i)+'.csv')
     df.columns = ['month', 'total', 'male', 'female', '16-24', '25-34', '35-44', '45-54', '55-64', '65+', 'married', 'not married', 'yes', 'no', 'access to car (1+)', 'no access to car (0)', 'ab', 'c1', 'c2', 'de', 'employed/self-employed (full or part time)', 'in full or part time education', 'unemployed/not working', '']
     df.to_csv('transfer/visitor_'+str(i)+'.csv', index = 0)
-data = pd.read_csv('transfer/visitor_2011.csv')
+data = pd.read_csv('transfer/visitor/visitor_2011.csv')
 data['year'] = 2011
 #Combine and classify the CSV files
 for i in range(2012, 2020):
-    df = pd.read_csv('transfer/visitor_'+str(i)+'.csv')
+    df = pd.read_csv('transfer/visitor/visitor_'+str(i)+'.csv')
     df['year'] = i
     data = pd.concat([data, df])
 #Drop the useless columns
