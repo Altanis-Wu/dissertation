@@ -38,6 +38,7 @@ for i in range(2012, 2020):
 #Drop the useless columns
 data = data.dropna(axis=1, how="all")
 data = data.drop(columns=['total'])
+#Classify the data based on different types of attributes
 gender = data[['year', 'month', 'male', 'female']]
 age = data[['year', 'month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
 married = data[['year', 'month', 'married', 'not married']]
@@ -45,6 +46,7 @@ children = data[['year', 'month', 'yes', 'no']]
 cars = data[['year', 'month', 'access to car (1+)',	'no access to car (0)']]
 social = data[['year', 'month', 'ab', 'c1', 'c2', 'de']]
 working = data[['year', 'month', 'employed/self-employed (full or part time)',	'in full or part time education', 'unemployed/not working']]
+#Write each CSV file to the disk
 age.to_csv('data/age.csv', index=0)
 gender.to_csv('data/gender.csv', index=0)
 married.to_csv('data/married.csv', index=0)
