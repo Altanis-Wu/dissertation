@@ -35,8 +35,6 @@ year,month,male,female
 2013,october,5.5,6.7
 2013,november,4.2,5.8
 2013,december,6.1,5.6
-2014, ,,
-2014,total,69.5,76.6
 2014,january,6.0,6.1
 2014,february,4.0,4.0
 2014,march,4.2,6.1
@@ -49,8 +47,6 @@ year,month,male,female
 2014,october,4.7,8.1
 2014,november,3.4,4.9
 2014,december,5.5,6.3
-2015, ,,
-2015,total,71.6,71.2
 2015,january,6.0,4.2
 2015,february,3.9,4.6
 2015,march,4.1,4.6
@@ -63,8 +59,6 @@ year,month,male,female
 2015,october,4.7,5.3
 2015,november,4.7,4.8
 2015,december,4.7,7.4
-2016, ,,
-2016,total,62.4,79.6
 2016,january,6.7,4.8
 2016,february,3.1,4.5
 2016,march,5.9,8.5
@@ -77,8 +71,6 @@ year,month,male,female
 2016,october,4.8,5.7
 2016,november,4.4,6.5
 2016,december,5.5,7.7
-2017, ,,
-2017,total,72.9,78.2
 2017,january,4.5,6.2
 2017,february,3.8,5.2
 2017,march,7.2,6.6
@@ -91,8 +83,6 @@ year,month,male,female
 2017,october,7.1,6.2
 2017,november,6.0,4.7
 2017,december,5.2,6.6
-2018, ,,
-2018,total,67.8,69.9
 2018,january,6.0,4.2
 2018,february,4.7,5.2
 2018,march,4.8,5.6
@@ -105,8 +95,6 @@ year,month,male,female
 2018,october,7.7,5.2
 2018,november,5.9,5.5
 2018,december,6.9,5.6
-2019, ,,
-2019,total,62.2,71.4
 2019,january,4.4,6.2
 2019,february,3.3,5.6
 2019,march,5.5,4.3

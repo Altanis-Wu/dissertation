@@ -5,7 +5,7 @@ list = ['\"unweighted base\"', '\"weighted base\"', '\"month\"', '\"base: all re
 for i in range(2011, 2020):
     input = []
     output = []
-    f = open('original_data/original_visitor_'+str(i)+'.csv', 'r')
+    f = open('original_data/original_visitor/original_visitor_'+str(i)+'.csv', 'r')
     line = f.readline().lower()
     # read each lines to the list
     while line:
@@ -38,6 +38,9 @@ for i in range(2012, 2020):
 #Drop the useless columns
 data = data.dropna(axis=1, how="all")
 data = data.drop(columns=['total'])
+#Drop the useless or repeated rows
+data = data.dropna()
+data = data[~data.month.isin(['total'])]
 #Classify the data based on different types of attributes
 gender = data[['year', 'month', 'male', 'female']]
 age = data[['year', 'month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
