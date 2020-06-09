@@ -27,7 +27,7 @@ for i in range(2011, 2020):
 for i in range(2011, 2016):
     df = pd.read_csv('transfer/visitor/visitor_'+str(i)+'.csv')
     df.columns = ['month', 'total', 'male', 'female', '16-24', '25-34', '35-44', '45-54', '55-64', '65+', 'married', 'not married', 'yes', 'no', 'access to car (1+)', 'no access to car (0)', 'ab', 'c1', 'c2', 'de', 'employed/self-employed (full or part time)', 'in full or part time education', 'unemployed/not working', '']
-    df.to_csv('transfer/visitor_'+str(i)+'.csv', index = 0)
+    df.to_csv('transfer/visitor/visitor_'+str(i)+'.csv', index = 0)
 data = pd.read_csv('transfer/visitor/visitor_2011.csv')
 data['year'] = 2011
 #Combine and classify the CSV files
