@@ -53,10 +53,10 @@ cars = data[['year', 'activity', 'access to car (1+)',	'no access to car (0)']]
 social = data[['year', 'activity', 'ab', 'c1', 'c2', 'de']]
 working = data[['year', 'activity', 'employed/self-employed (full or part time)',	'in full or part time education', 'unemployed/not working']]
 #Write each CSV file to the disk
-age.to_csv('data/age_activity.csv', index=0)
-gender.to_csv('data/gender_activity.csv', index=0)
-married.to_csv('data/married_activity.csv', index=0)
-children.to_csv('data/children_activity.csv', index=0)
-cars.to_csv('data/cars_activity.csv', index=0)
-social.to_csv('data/social_activity.csv', index=0)
-working.to_csv('data/working_activity.csv', index=0)
+age.to_csv('data/age/age_activity.csv', index=0)
+gender.to_csv('data/gender/gender_activity.csv', index=0)
+married.to_csv('data/married/married_activity.csv', index=0)
+children.to_csv('data/children/children_activity.csv', index=0)
+cars.to_csv('data/cars/cars_activity.csv', index=0)
+social.to_csv('data/social/social_activity.csv', index=0)
+working.to_csv('data/working/working_activity.csv', index=0)
