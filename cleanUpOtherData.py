@@ -46,7 +46,6 @@ data = data.drop(columns=['total'])
 data.to_csv('tem.csv', index=0)
 gender = data[['year', 'activity', 'male', 'female']]
 age = data[['year', 'activity', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
-print(age)
 married = data[['year', 'activity', 'married', 'not married']]
 children = data[['year', 'activity', 'yes', 'no']]
 cars = data[['year', 'activity', 'access to car (1+)',	'no access to car (0)']]
