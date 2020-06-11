@@ -48,7 +48,6 @@ data = data.dropna(axis=1, how="all")
 data = data.drop(columns=['total'])
 for i in rows:
     data[i] = data[i].apply(lambda x:0.0 if x=='-' else x)
-data.to_csv('tem.csv', index=0)
 gender = data[['year', 'transport', 'male', 'female']]
 age = data[['year', 'transport', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
 married = data[['year', 'transport', 'married', 'not married']]
