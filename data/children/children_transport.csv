@@ -1,0 +1,158 @@
+year,transport,yes,no
+2011,any car (net),28.0,75.5
+2011,car - own/friends/family,26.8,74.3
+2011,car - hired,1.2,1.2
+2011,public transport (net),4.3,21.3
+2011,train,2.9,9.9
+2011,a regular bus\coach,1.4,11.4
+2011,organised coach tour,0.3,1.9
+2011,taxi,1.3,3.5
+2011,walked\on foot,2.4,9.4
+2011,bicycle,0.3,0.4
+2011,minibus,0.1,0.6
+2011,motor cycle,0.3,0.3
+2011,tube,0.1,0.7
+2011,tram,0.5,0.0
+2011,motorised caravan\campervan,0.4,0.2
+2011,plane,0.2,1.3
+2011,boat\ship\ferry,0.0,0.5
+2011,lorry\truck\van,0.0,0.1
+2011,other,0.0,0.2
+2012,any car (net),28.9,81.9
+2012,car - own/friends/family,28.6,80.7
+2012,car - hired,0.3,1.2
+2012,public transport (net),4.9,23.9
+2012,train,2.5,12.0
+2012,a regular bus\coach,2.4,11.9
+2012,organised coach tour,0.7,1.2
+2012,taxi,0.8,2.8
+2012,walked\on foot,1.5,9.1
+2012,bicycle,0.3,1.7
+2012,minibus,0.1,0.5
+2012,motor cycle,0.0,0.2
+2012,tube,0.2,0.4
+2012,tram,0.1,0.0
+2012,motorised caravan\campervan,0.0,0.0
+2012,plane,0.2,0.3
+2012,boat\ship\ferry,0.4,0.4
+2012,lorry\truck\van,0.1,2.0
+2012,other,0.2,0.9
+2013,any car (net),25.0,68.6
+2013,car - own/friends/family,24.4,67.2
+2013,car - hired,0.6,1.3
+2013,public transport (net),7.0,23.0
+2013,train,4.5,10.7
+2013,a regular bus\coach,2.5,12.3
+2013,organised coach tour,0.2,1.4
+2013,taxi,0.9,2.2
+2013,walked\on foot,1.6,6.9
+2013,bicycle,0.3,1.4
+2013,minibus,0.1,0.1
+2013,motor cycle,0.3,0.2
+2013,tube,0.1,0.1
+2013,tram,0.0,0.0
+2013,motorised caravan\campervan,0.1,0.3
+2013,plane,0.1,0.2
+2013,boat\ship\ferry,0.1,0.8
+2013,lorry\truck\van,0.2,0.2
+2013,other,0.1,0.7
+2014,car - own/friends/family,24.8,69.7
+2014,car - hired,0.2,1.4
+2014,public transport,6.8,22.9
+2014,train,4.5,11.9
+2014,a regular bus\coach,2.3,11.1
+2014,organised coach tour,0.1,0.7
+2014,taxi,1.2,3.8
+2014,walked\on foot,1.1,8.3
+2014,bicycle,0.0,1.5
+2014,minibus,0.1,0.2
+2014,motor cycle,0.0,0.2
+2014,tube,0.0,0.0
+2014,tram,0.3,0.2
+2014,motorised caravan\campervan,0.0,0.1
+2014,plane,0.5,0.1
+2014,boat\ship\ferry,0.1,0.6
+2014,lorry\truck\van,0.0,0.1
+2014,other,0.7,0.4
+2015,car - own/friends/family,24.7,62.7
+2015,car - hired,0.3,1.6
+2015,public transport,7.9,25.8
+2015,train,4.6,12.8
+2015,a regular bus\coach,3.3,13.0
+2015,organised coach tour,0.7,1.4
+2015,taxi,1.0,2.4
+2015,walked\on foot,0.8,8.1
+2015,bicycle,0.2,0.7
+2015,minibus,0.7,0.4
+2015,motor cycle,0.0,0.2
+2015,tube,0.0,0.1
+2015,tram,0.1,0.2
+2015,motorised caravan\campervan,0.0,0.2
+2015,plane,0.4,0.7
+2015,boat\ship\ferry,0.3,0.5
+2015,lorry\truck\van,0.0,0.1
+2015,other,0.2,0.5
+2016,car - own/friends/family,19.7,72.2
+2016,car - hired,1.5,1.1
+2016,public transport,8.0,20.0
+2016,train,4.9,9.1
+2016,a regular bus\coach,3.0,10.8
+2016,organised coach tour,0.5,1.0
+2016,taxi,1.9,3.1
+2016,walked\on foot,1.4,6.5
+2016,bicycle,0.3,0.5
+2016,tube,0.1,0.4
+2016,tram,0.1,0.1
+2016,motorised caravan\campervan,0.0,0.5
+2016,plane,0.1,0.6
+2016,boat\ship\ferry,0.0,0.1
+2016,lorry\truck\van,0.0,0.3
+2016,other,0.2,1.9
+2017,car - own/friends/family,26.1,66.4
+2017,car - hired,4.4,2.0
+2017,public transport,7.5,21.7
+2017,train,5.3,10.7
+2017,a regular bus\coach,2.2,11.1
+2017,organised coach tour,0.9,2.1
+2017,taxi,1.5,2.4
+2017,walked\on foot,1.6,6.9
+2017,bicycle,0.3,1.2
+2017,tube,0.3,0.2
+2017,tram,0.0,0.5
+2017,motorised caravan\campervan,0.4,0.4
+2017,plane,0.4,1.4
+2017,boat\ship\ferry,0.2,0.3
+2017,lorry\truck\van,0.3,0.2
+2017,other,0.0,1.2
+2018,car - own/friends/family,28.2,56.0
+2018,car - hired,0.5,2.2
+2018,public transport,6.9,22.1
+2018,train,4.0,12.8
+2018,a regular bus\coach,2.9,9.3
+2018,organised coach tour,0.5,0.6
+2018,taxi,1.1,2.4
+2018,walked\on foot,2.3,9.0
+2018,bicycle,0.0,0.7
+2018,tube,0.0,0.6
+2018,tram,0.1,0.2
+2018,motorised caravan\campervan,0.0,0.1
+2018,plane,0.6,1.1
+2018,boat\ship\ferry,0.0,0.2
+2018,lorry\truck\van,0.0,0.3
+2018,other,0.4,1.5
+2019,car - own/friends/family,25.2,54.8
+2019,car - hired,1.5,0.8
+2019,public transport,9.0,19.6
+2019,train,6.2,9.7
+2019,a regular bus\coach,2.8,9.9
+2019,organised coach tour,1.0,1.5
+2019,taxi,1.9,3.7
+2019,walked\on foot,1.9,5.6
+2019,bicycle,0.5,0.7
+2019,tube,0.3,1.2
+2019,tram,0.1,0.2
+2019,motorised caravan\campervan,0.0,0.4
+2019,plane,0.7,0.7
+2019,boat\ship\ferry,0.2,0.3
+2019,lorry\truck\van,0.2,0.1
+2019,other,0.3,1.0
