@@ -2,6 +2,7 @@ import pandas as pd
 import os
 # list contains the title of useless lines
 list = ['\"unweighted base\"', '\"weighted base\"', '\"month\"', '\"base: all respondents\"', '\n', '\"all scotland"']
+month = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 #open the file and read each line to a list
 for i in range(2011, 2020):
     input = []
@@ -42,6 +43,7 @@ data = data.drop(columns=['total'])
 #Drop the useless or repeated rows
 data = data.dropna()
 data = data[~data.month.isin(['total'])]
+data['month'] = data['month'].apply(lambda row: month.index(row)+1)
 #Classify the data based on different types of attributes
 gender = data[['year', 'month', 'male', 'female']]
 age = data[['year', 'month', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
