@@ -3,3 +3,7 @@ from sqlalchemy import create_engine
 
 #Connect to MySQL database
 connection = create_engine("mysql+pymysql://root@localhost:3306/DissertationDatabase")
+
+def readFrom(tableName):
+    sql = 'select * from ' + tableName + ';'
+    return pd.read_sql_query(sql, connection)
