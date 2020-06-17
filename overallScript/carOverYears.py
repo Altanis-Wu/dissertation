@@ -1,5 +1,6 @@
 from matplotlib import pyplot as plt
 import readFromDatabase as rfd
+import os
 #Read data from database
 visitorData = rfd.readFrom('Cars')
 plt.figure(figsize=(8, 8))
@@ -13,5 +14,5 @@ plt.ylabel('Count(Million)')
 plt.xlabel('Years')
 plt.title('Number of Visitors who Have Cars for Day Visist in Scotland')
 #Save the chart as a 'PNG' file.
-plt.savefig('figures/CarOverYears.png')
+plt.savefig(os.path.dirname(os.getcwd())+'/figures/CarOverYears.png')
 plt.show()

@@ -1,5 +1,6 @@
 from matplotlib import pyplot as plt
 import readFromDatabase as rfd
+import os
 #Read data from database
 visitorData = rfd.readFrom('Working')
 #Add a column named 'Total'
@@ -19,5 +20,5 @@ plt.ylabel('Count(Million)')
 plt.xlabel('Years')
 plt.title('Number of Visitors from Different Working Status for Day Visist in Scotland')
 #Save the chart as a 'PNG' file.
-plt.savefig('figures/WorkingOverYears.png')
+plt.savefig(os.path.dirname(os.getcwd())+'/figures/WorkingOverYears.png')
 plt.show()
