@@ -41,3 +41,6 @@ The same with Cars.
 **Matplotlib**: Used to visualize the dataset.  
 **PyMySQL**: Used to read the data from database.  
 **Pandas**: Used to convert the result from database to dataframe.
+
+Make a table about the dataset in database.
+Find working status is the most important part.
