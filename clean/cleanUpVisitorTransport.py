@@ -49,13 +49,14 @@ data = data.drop(columns=['total'])
 for i in rows:
     data[i] = data[i].apply(lambda x:0.0 if x=='-' else x)
 data['type'] = 'transport'
-gender = data[['year', 'type','transport', 'male', 'female']]
-age = data[['year', 'type', '16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
-married = data[['year', 'type', 'married', 'not married']]
-children = data[['year', 'type', 'yes', 'no']]
-cars = data[['year', 'type', 'access to car (1+)',	'no access to car (0)']]
-social = data[['year', 'type', 'ab', 'c1', 'c2', 'de']]
-working = data[['year', 'type', 'employed/self-employed (full or part time)',	'in full or part time education', 'unemployed/not working']]
+data = data.rename(columns={'transport':'action'})
+gender = data[['year', 'type','action', 'male', 'female']]
+age = data[['year', 'type', 'action','16-24', '25-34', '35-44', '45-54', '55-64', '65+']]
+married = data[['year', 'type', 'action','married', 'not married']]
+children = data[['year', 'type', 'action','yes', 'no']]
+cars = data[['year', 'type', 'action','access to car (1+)',	'no access to car (0)']]
+social = data[['year', 'type', 'action','ab', 'c1', 'c2', 'de']]
+working = data[['year', 'type', 'action','employed/self-employed (full or part time)',	'in full or part time education', 'unemployed/not working']]
 #Write each CSV file to the disk
 age.to_csv(os.path.dirname(os.getcwd())+'/data/age/age_transport.csv', index=0)
 gender.to_csv(os.path.dirname(os.getcwd())+'/data/gender/gender_transport.csv', index=0)

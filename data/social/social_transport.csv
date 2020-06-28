@@ -1,158 +1,158 @@
-year,type,ab,c1,c2,de
-2011,transport,35.9,32.0,22.7,12.8
-2011,transport,35.6,31.7,21.0,12.7
-2011,transport,0.3,0.2,1.7,0.1
-2011,transport,8.1,10.0,2.5,5.0
-2011,transport,5.0,5.1,0.8,1.9
-2011,transport,3.2,5.0,1.6,3.1
-2011,transport,0.4,1.2,0.3,0.4
-2011,transport,1.8,1.6,0.7,0.7
-2011,transport,4.0,4.1,2.0,1.6
-2011,transport,0.3,0.2,0.1,0.2
-2011,transport,0.3,0.4,0.1,0.0
-2011,transport,0.3,0.2,0.0,0.0
-2011,transport,0.1,0.2,0.3,0.2
-2011,transport,0.0,0.0,0.5,0.0
-2011,transport,0.2,0.4,0.0,0.0
-2011,transport,0.0,0.9,0.4,0.2
-2011,transport,0.1,0.1,0.0,0.4
-2011,transport,0.1,0.0,0.1,0.0
-2011,transport,0.1,0.1,0.0,0.1
-2012,transport,38.6,36.6,22.5,13.2
-2012,transport,38.3,36.1,22.0,12.9
-2012,transport,0.3,0.4,0.5,0.3
-2012,transport,7.9,10.9,4.7,5.3
-2012,transport,4.8,5.6,2.4,1.8
-2012,transport,3.2,5.3,2.3,3.5
-2012,transport,0.4,0.5,0.4,0.5
-2012,transport,1.1,1.1,0.7,0.8
-2012,transport,1.8,4.7,2.4,1.7
-2012,transport,0.3,0.7,0.2,0.8
-2012,transport,0.1,0.3,0.1,0.0
-2012,transport,0.1,0.0,0.0,0.0
-2012,transport,0.1,0.4,0.0,0.0
-2012,transport,0.0,0.0,0.0,0.0
-2012,transport,0.0,0.0,0.0,0.0
-2012,transport,0.2,0.2,0.0,0.1
-2012,transport,0.4,0.3,0.0,0.1
-2012,transport,0.1,1.8,0.2,0.0
-2012,transport,0.2,0.3,0.5,0.2
-2013,transport,31.6,29.6,17.2,15.1
-2013,transport,30.6,29.2,16.8,15.0
-2013,transport,1.1,0.4,0.4,0.1
-2013,transport,7.6,10.1,6.1,6.2
-2013,transport,4.8,5.2,2.7,2.5
-2013,transport,2.8,4.9,3.4,3.7
-2013,transport,0.2,0.6,0.5,0.2
-2013,transport,0.5,1.4,0.9,0.3
-2013,transport,2.6,2.7,1.2,2.0
-2013,transport,0.4,0.6,0.5,0.3
-2013,transport,0.1,0.1,0.0,0.0
-2013,transport,0.5,0.0,0.0,0.0
-2013,transport,0.1,0.1,0.0,0.0
-2013,transport,0.0,0.0,0.0,0.0
-2013,transport,0.1,0.1,0.1,0.1
-2013,transport,0.0,0.2,0.0,0.0
-2013,transport,0.4,0.1,0.0,0.5
-2013,transport,0.3,0.0,0.0,0.0
-2013,transport,0.2,0.2,0.2,0.3
-2014,transport,36.2,30.3,14.1,13.9
-2014,transport,1.1,0.1,0.2,0.2
-2014,transport,8.6,9.9,4.3,6.9
-2014,transport,4.7,6.2,2.4,3.1
-2014,transport,3.9,3.7,1.8,3.9
-2014,transport,0.1,0.4,0.2,0.0
-2014,transport,2.4,0.9,0.5,1.1
-2014,transport,2.7,4.5,0.7,1.5
-2014,transport,0.8,0.0,0.5,0.2
-2014,transport,0.0,0.1,0.2,0.0
-2014,transport,0.2,0.0,0.0,0.0
-2014,transport,0.0,0.0,0.0,0.0
-2014,transport,0.0,0.0,0.0,0.5
-2014,transport,0.1,0.0,0.0,0.0
-2014,transport,0.0,0.0,0.1,0.5
-2014,transport,0.3,0.3,0.1,0.0
-2014,transport,0.1,0.0,0.0,0.1
-2014,transport,1.0,0.0,0.1,0.0
-2015,transport,33.3,30.5,11.1,12.5
-2015,transport,0.6,0.3,0.8,0.2
-2015,transport,9.7,13.8,4.1,6.1
-2015,transport,5.0,7.0,2.6,2.9
-2015,transport,4.8,6.8,1.6,3.2
-2015,transport,0.8,0.5,0.2,0.6
-2015,transport,1.5,0.9,0.2,0.7
-2015,transport,2.7,3.8,1.5,0.8
-2015,transport,0.3,0.4,0.0,0.2
-2015,transport,0.2,0.5,0.3,0.0
-2015,transport,0.0,0.0,0.2,0.0
-2015,transport,0.0,0.1,0.0,0.0
-2015,transport,0.2,0.1,0.0,0.0
-2015,transport,0.1,0.0,0.0,0.1
-2015,transport,0.3,0.7,0.0,0.0
-2015,transport,0.2,0.3,0.0,0.2
-2015,transport,0.0,0.0,0.0,0.0
-2015,transport,0.1,0.2,0.2,0.1
-2016,transport,35.0,26.4,14.8,15.8
-2016,transport,0.7,0.5,0.7,0.7
-2016,transport,7.4,10.0,4.8,5.8
-2016,transport,4.0,5.4,2.5,2.2
-2016,transport,3.4,4.6,2.3,3.6
-2016,transport,0.5,0.2,0.4,0.4
-2016,transport,1.5,0.7,2.2,0.6
-2016,transport,2.9,2.4,1.5,1.1
-2016,transport,0.7,0.0,0.0,0.1
-2016,transport,0.2,0.2,0.1,0.0
-2016,transport,0.1,0.0,0.1,0.0
-2016,transport,0.2,0.2,0.1,0.1
-2016,transport,0.0,0.3,0.2,0.1
-2016,transport,0.0,0.1,0.0,0.0
-2016,transport,0.1,0.0,0.0,0.2
-2016,transport,0.9,1.0,0.0,0.2
-2017,transport,31.0,25.9,20.9,14.6
-2017,transport,4.4,0.8,0.4,0.9
-2017,transport,8.3,8.4,5.6,7.0
-2017,transport,5.4,4.4,3.0,3.1
-2017,transport,2.8,4.0,2.6,3.8
-2017,transport,0.4,1.2,0.7,0.8
-2017,transport,1.0,1.1,0.7,1.1
-2017,transport,2.5,3.2,1.2,1.7
-2017,transport,0.2,0.8,0.2,0.2
-2017,transport,0.5,0.1,0.0,0.0
-2017,transport,0.2,0.1,0.3,0.0
-2017,transport,0.3,0.1,0.0,0.4
-2017,transport,0.4,0.2,0.3,0.9
-2017,transport,0.2,0.1,0.1,0.2
-2017,transport,0.0,0.1,0.1,0.3
-2017,transport,0.4,0.2,0.2,0.4
-2018,transport,31.0,23.4,17.7,12.2
-2018,transport,1.4,0.3,0.7,0.4
-2018,transport,7.3,9.8,5.7,6.2
-2018,transport,3.6,6.9,3.9,2.4
-2018,transport,3.7,2.9,1.8,3.8
-2018,transport,0.4,0.4,0.2,0.1
-2018,transport,1.0,1.1,0.5,0.9
-2018,transport,2.8,3.2,3.2,2.0
-2018,transport,0.1,0.6,0.1,0.0
-2018,transport,0.4,0.0,0.0,0.1
-2018,transport,0.1,0.2,0.0,0.1
-2018,transport,0.0,0.1,0.0,0.0
-2018,transport,0.4,0.1,0.4,0.8
-2018,transport,0.1,0.1,0.0,0.0
-2018,transport,0.0,0.1,0.0,0.2
-2018,transport,0.2,0.2,0.8,0.8
-2019,transport,22.5,21.6,17.4,18.5
-2019,transport,0.6,0.7,0.6,0.3
-2019,transport,6.0,8.5,4.3,9.7
-2019,transport,3.5,5.0,2.6,4.9
-2019,transport,2.5,3.6,1.8,4.9
-2019,transport,0.8,0.7,0.7,0.4
-2019,transport,1.0,1.6,1.7,1.4
-2019,transport,2.3,1.5,1.6,2.2
-2019,transport,0.4,0.5,0.2,0.1
-2019,transport,1.2,0.1,0.0,0.3
-2019,transport,0.2,0.0,0.1,0.1
-2019,transport,0.1,0.1,0.2,0.1
-2019,transport,0.7,0.2,0.1,0.3
-2019,transport,0.2,0.1,0.1,0.1
-2019,transport,0.1,0.0,0.0,0.2
-2019,transport,0.1,0.2,0.1,0.9
+year,type,action,ab,c1,c2,de
+2011,transport,any car (net),35.9,32.0,22.7,12.8
+2011,transport,car - own/friends/family,35.6,31.7,21.0,12.7
+2011,transport,car - hired,0.3,0.2,1.7,0.1
+2011,transport,public transport (net),8.1,10.0,2.5,5.0
+2011,transport,train,5.0,5.1,0.8,1.9
+2011,transport,a regular bus\coach,3.2,5.0,1.6,3.1
+2011,transport,organised coach tour,0.4,1.2,0.3,0.4
+2011,transport,taxi,1.8,1.6,0.7,0.7
+2011,transport,walked\on foot,4.0,4.1,2.0,1.6
+2011,transport,bicycle,0.3,0.2,0.1,0.2
+2011,transport,minibus,0.3,0.4,0.1,0.0
+2011,transport,motor cycle,0.3,0.2,0.0,0.0
+2011,transport,tube,0.1,0.2,0.3,0.2
+2011,transport,tram,0.0,0.0,0.5,0.0
+2011,transport,motorised caravan\campervan,0.2,0.4,0.0,0.0
+2011,transport,plane,0.0,0.9,0.4,0.2
+2011,transport,boat\ship\ferry,0.1,0.1,0.0,0.4
+2011,transport,lorry\truck\van,0.1,0.0,0.1,0.0
+2011,transport,other,0.1,0.1,0.0,0.1
+2012,transport,any car (net),38.6,36.6,22.5,13.2
+2012,transport,car - own/friends/family,38.3,36.1,22.0,12.9
+2012,transport,car - hired,0.3,0.4,0.5,0.3
+2012,transport,public transport (net),7.9,10.9,4.7,5.3
+2012,transport,train,4.8,5.6,2.4,1.8
+2012,transport,a regular bus\coach,3.2,5.3,2.3,3.5
+2012,transport,organised coach tour,0.4,0.5,0.4,0.5
+2012,transport,taxi,1.1,1.1,0.7,0.8
+2012,transport,walked\on foot,1.8,4.7,2.4,1.7
+2012,transport,bicycle,0.3,0.7,0.2,0.8
+2012,transport,minibus,0.1,0.3,0.1,0.0
+2012,transport,motor cycle,0.1,0.0,0.0,0.0
+2012,transport,tube,0.1,0.4,0.0,0.0
+2012,transport,tram,0.0,0.0,0.0,0.0
+2012,transport,motorised caravan\campervan,0.0,0.0,0.0,0.0
+2012,transport,plane,0.2,0.2,0.0,0.1
+2012,transport,boat\ship\ferry,0.4,0.3,0.0,0.1
+2012,transport,lorry\truck\van,0.1,1.8,0.2,0.0
+2012,transport,other,0.2,0.3,0.5,0.2
+2013,transport,any car (net),31.6,29.6,17.2,15.1
+2013,transport,car - own/friends/family,30.6,29.2,16.8,15.0
+2013,transport,car - hired,1.1,0.4,0.4,0.1
+2013,transport,public transport (net),7.6,10.1,6.1,6.2
+2013,transport,train,4.8,5.2,2.7,2.5
+2013,transport,a regular bus\coach,2.8,4.9,3.4,3.7
+2013,transport,organised coach tour,0.2,0.6,0.5,0.2
+2013,transport,taxi,0.5,1.4,0.9,0.3
+2013,transport,walked\on foot,2.6,2.7,1.2,2.0
+2013,transport,bicycle,0.4,0.6,0.5,0.3
+2013,transport,minibus,0.1,0.1,0.0,0.0
+2013,transport,motor cycle,0.5,0.0,0.0,0.0
+2013,transport,tube,0.1,0.1,0.0,0.0
+2013,transport,tram,0.0,0.0,0.0,0.0
+2013,transport,motorised caravan\campervan,0.1,0.1,0.1,0.1
+2013,transport,plane,0.0,0.2,0.0,0.0
+2013,transport,boat\ship\ferry,0.4,0.1,0.0,0.5
+2013,transport,lorry\truck\van,0.3,0.0,0.0,0.0
+2013,transport,other,0.2,0.2,0.2,0.3
+2014,transport,car - own/friends/family,36.2,30.3,14.1,13.9
+2014,transport,car - hired,1.1,0.1,0.2,0.2
+2014,transport,public transport,8.6,9.9,4.3,6.9
+2014,transport,train,4.7,6.2,2.4,3.1
+2014,transport,a regular bus\coach,3.9,3.7,1.8,3.9
+2014,transport,organised coach tour,0.1,0.4,0.2,0.0
+2014,transport,taxi,2.4,0.9,0.5,1.1
+2014,transport,walked\on foot,2.7,4.5,0.7,1.5
+2014,transport,bicycle,0.8,0.0,0.5,0.2
+2014,transport,minibus,0.0,0.1,0.2,0.0
+2014,transport,motor cycle,0.2,0.0,0.0,0.0
+2014,transport,tube,0.0,0.0,0.0,0.0
+2014,transport,tram,0.0,0.0,0.0,0.5
+2014,transport,motorised caravan\campervan,0.1,0.0,0.0,0.0
+2014,transport,plane,0.0,0.0,0.1,0.5
+2014,transport,boat\ship\ferry,0.3,0.3,0.1,0.0
+2014,transport,lorry\truck\van,0.1,0.0,0.0,0.1
+2014,transport,other,1.0,0.0,0.1,0.0
+2015,transport,car - own/friends/family,33.3,30.5,11.1,12.5
+2015,transport,car - hired,0.6,0.3,0.8,0.2
+2015,transport,public transport,9.7,13.8,4.1,6.1
+2015,transport,train,5.0,7.0,2.6,2.9
+2015,transport,a regular bus\coach,4.8,6.8,1.6,3.2
+2015,transport,organised coach tour,0.8,0.5,0.2,0.6
+2015,transport,taxi,1.5,0.9,0.2,0.7
+2015,transport,walked\on foot,2.7,3.8,1.5,0.8
+2015,transport,bicycle,0.3,0.4,0.0,0.2
+2015,transport,minibus,0.2,0.5,0.3,0.0
+2015,transport,motor cycle,0.0,0.0,0.2,0.0
+2015,transport,tube,0.0,0.1,0.0,0.0
+2015,transport,tram,0.2,0.1,0.0,0.0
+2015,transport,motorised caravan\campervan,0.1,0.0,0.0,0.1
+2015,transport,plane,0.3,0.7,0.0,0.0
+2015,transport,boat\ship\ferry,0.2,0.3,0.0,0.2
+2015,transport,lorry\truck\van,0.0,0.0,0.0,0.0
+2015,transport,other,0.1,0.2,0.2,0.1
+2016,transport,car - own/friends/family,35.0,26.4,14.8,15.8
+2016,transport,car - hired,0.7,0.5,0.7,0.7
+2016,transport,public transport,7.4,10.0,4.8,5.8
+2016,transport,train,4.0,5.4,2.5,2.2
+2016,transport,a regular bus\coach,3.4,4.6,2.3,3.6
+2016,transport,organised coach tour,0.5,0.2,0.4,0.4
+2016,transport,taxi,1.5,0.7,2.2,0.6
+2016,transport,walked\on foot,2.9,2.4,1.5,1.1
+2016,transport,bicycle,0.7,0.0,0.0,0.1
+2016,transport,tube,0.2,0.2,0.1,0.0
+2016,transport,tram,0.1,0.0,0.1,0.0
+2016,transport,motorised caravan\campervan,0.2,0.2,0.1,0.1
+2016,transport,plane,0.0,0.3,0.2,0.1
+2016,transport,boat\ship\ferry,0.0,0.1,0.0,0.0
+2016,transport,lorry\truck\van,0.1,0.0,0.0,0.2
+2016,transport,other,0.9,1.0,0.0,0.2
+2017,transport,car - own/friends/family,31.0,25.9,20.9,14.6
+2017,transport,car - hired,4.4,0.8,0.4,0.9
+2017,transport,public transport,8.3,8.4,5.6,7.0
+2017,transport,train,5.4,4.4,3.0,3.1
+2017,transport,a regular bus\coach,2.8,4.0,2.6,3.8
+2017,transport,organised coach tour,0.4,1.2,0.7,0.8
+2017,transport,taxi,1.0,1.1,0.7,1.1
+2017,transport,walked\on foot,2.5,3.2,1.2,1.7
+2017,transport,bicycle,0.2,0.8,0.2,0.2
+2017,transport,tube,0.5,0.1,0.0,0.0
+2017,transport,tram,0.2,0.1,0.3,0.0
+2017,transport,motorised caravan\campervan,0.3,0.1,0.0,0.4
+2017,transport,plane,0.4,0.2,0.3,0.9
+2017,transport,boat\ship\ferry,0.2,0.1,0.1,0.2
+2017,transport,lorry\truck\van,0.0,0.1,0.1,0.3
+2017,transport,other,0.4,0.2,0.2,0.4
+2018,transport,car - own/friends/family,31.0,23.4,17.7,12.2
+2018,transport,car - hired,1.4,0.3,0.7,0.4
+2018,transport,public transport,7.3,9.8,5.7,6.2
+2018,transport,train,3.6,6.9,3.9,2.4
+2018,transport,a regular bus\coach,3.7,2.9,1.8,3.8
+2018,transport,organised coach tour,0.4,0.4,0.2,0.1
+2018,transport,taxi,1.0,1.1,0.5,0.9
+2018,transport,walked\on foot,2.8,3.2,3.2,2.0
+2018,transport,bicycle,0.1,0.6,0.1,0.0
+2018,transport,tube,0.4,0.0,0.0,0.1
+2018,transport,tram,0.1,0.2,0.0,0.1
+2018,transport,motorised caravan\campervan,0.0,0.1,0.0,0.0
+2018,transport,plane,0.4,0.1,0.4,0.8
+2018,transport,boat\ship\ferry,0.1,0.1,0.0,0.0
+2018,transport,lorry\truck\van,0.0,0.1,0.0,0.2
+2018,transport,other,0.2,0.2,0.8,0.8
+2019,transport,car - own/friends/family,22.5,21.6,17.4,18.5
+2019,transport,car - hired,0.6,0.7,0.6,0.3
+2019,transport,public transport,6.0,8.5,4.3,9.7
+2019,transport,train,3.5,5.0,2.6,4.9
+2019,transport,a regular bus\coach,2.5,3.6,1.8,4.9
+2019,transport,organised coach tour,0.8,0.7,0.7,0.4
+2019,transport,taxi,1.0,1.6,1.7,1.4
+2019,transport,walked\on foot,2.3,1.5,1.6,2.2
+2019,transport,bicycle,0.4,0.5,0.2,0.1
+2019,transport,tube,1.2,0.1,0.0,0.3
+2019,transport,tram,0.2,0.0,0.1,0.1
+2019,transport,motorised caravan\campervan,0.1,0.1,0.2,0.1
+2019,transport,plane,0.7,0.2,0.1,0.3
+2019,transport,boat\ship\ferry,0.2,0.1,0.1,0.1
+2019,transport,lorry\truck\van,0.1,0.0,0.0,0.2
+2019,transport,other,0.1,0.2,0.1,0.9

@@ -1,4 +1,4 @@
-year,type,place,access to car (1+),no access to car (0)
+year,type,action,access to car (1+),no access to car (0)
 2011,place,city/large town,51.8,13.2
 2011,place,small town,37.2,6.2
 2011,place,village,15.7,2.4

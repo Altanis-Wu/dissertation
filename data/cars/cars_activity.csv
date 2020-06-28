@@ -1,4 +1,4 @@
-year,type,activity,access to car (1+),no access to car (0)
+year,type,action,access to car (1+),no access to car (0)
 2011,activity,visited friends or family for leisure,43.6,10.3
 2011,activity,'special' shopping for items that you do not regularly buy,11.4,1.9
 2011,activity,went out for a meal,34.6,4.6
