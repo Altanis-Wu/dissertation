@@ -1,0 +1,359 @@
+year,type,action,married,not married
+2011,activity,visited friends or family for leisure,33.7,20.3
+2011,activity,'special' shopping for items that you do not regularly buy,9.7,3.6
+2011,activity,went out for a meal,27.5,11.7
+2011,activity,"went on a night out to a bar, pub and/or club",14.4,9.8
+2011,activity,"went out for entertainment – to a cinema, concert or theatre",6.8,4.5
+2011,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",18.3,7.5
+2011,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",2.9,5.3
+2011,activity,"took part in sports, including exercise classes, going to the gym",4.0,2.3
+2011,activity,watched live sporting event (not on tv),5.3,3.0
+2011,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",7.7,3.3
+2011,activity,"went to a special public event such as a festival, exhibition, etc.",4.0,2.8
+2011,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",3.7,1.5
+2011,activity,"went on days out to a beauty/health centre/spa, etc.",2.5,1.0
+2011,activity,went on general days out/ to explore an area,12.7,7.5
+2011,activity,went on day trips/excursions for another leisure purpose not mentioned above,5.0,3.6
+2012,activity,visited friends or family for leisure,33.1,22.3
+2012,activity,'special' shopping for items that you do not regularly buy,15.1,6.6
+2012,activity,went out for a meal,27.5,14.9
+2012,activity,"went on a night out to a bar, pub and/or club",15.7,10.0
+2012,activity,"went out for entertainment – to a cinema, concert or theatre",9.1,7.2
+2012,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",19.1,10.1
+2012,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",6.2,4.3
+2012,activity,"took part in sports, including exercise classes, going to the gym",4.7,2.1
+2012,activity,watched live sporting event (not on tv),8.4,3.5
+2012,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",7.3,4.7
+2012,activity,"went to a special public event such as a festival, exhibition, etc.",3.5,2.2
+2012,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",3.7,2.6
+2012,activity,"went on days out to a beauty/health centre/spa, etc.",0.5,1.1
+2012,activity,went on general days out/ to explore an area,12.0,8.3
+2012,activity,went on day trips/excursions for another leisure purpose not mentioned above,7.1,2.3
+2013,activity,visited friends or family for leisure,28.7,18.5
+2013,activity,'special' shopping for items that you do not regularly buy,11.6,5.8
+2013,activity,went out for a meal,20.5,13.1
+2013,activity,"went on a night out to a bar, pub and/or club",11.9,8.6
+2013,activity,"went out for entertainment – to a cinema, concert or theatre",7.3,5.3
+2013,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",15.7,9.0
+2013,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",3.3,3.8
+2013,activity,"took part in sports, including exercise classes, going to the gym",3.3,2.9
+2013,activity,watched live sporting event (not on tv),6.1,3.5
+2013,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",7.6,4.8
+2013,activity,"went to a special public event such as a festival, exhibition, etc.",4.1,2.2
+2013,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",2.8,1.6
+2013,activity,"went on days out to a beauty/health centre/spa, etc.",0.8,0.3
+2013,activity,went on general days out/ to explore an area,12.9,6.5
+2013,activity,went on day trips/excursions for another leisure purpose not mentioned above,6.6,3.8
+2014,activity,visited friends or family for leisure,26.0,21.0
+2014,activity,'special' shopping for items that you do not regularly buy,11.2,8.4
+2014,activity,went out for a meal,22.4,13.7
+2014,activity,"went on a night out to a bar, pub and/or club",10.1,12.6
+2014,activity,"went out for entertainment – to a cinema, concert or theatre",6.9,6.3
+2014,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",13.2,11.6
+2014,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",4.8,4.9
+2014,activity,"took part in sports, including exercise classes, going to the gym",2.9,2.5
+2014,activity,watched live sporting event (not on tv),6.4,4.1
+2014,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",8.4,4.7
+2014,activity,"went to a special public event such as a festival, exhibition, etc.",5.3,3.4
+2014,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",3.2,1.8
+2014,activity,"went on days out to a beauty/health centre/spa, etc.",1.4,0.6
+2014,activity,went on general days out/ to explore an area,12.8,9.2
+2014,activity,went on day trips/excursions for another leisure purpose not mentioned above,7.0,4.6
+2015,activity,visited friends or family for leisure,27.2,25.2
+2015,activity,'special' shopping for items that you do not regularly buy,12.2,6.2
+2015,activity,went out for a meal,23.4,16.2
+2015,activity,"went on a night out to a bar, pub and/or club",10.9,11.4
+2015,activity,"went out for entertainment – to a cinema, concert or theatre",7.1,6.8
+2015,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",16.5,10.6
+2015,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",6.0,5.7
+2015,activity,"took part in sports, including exercise classes, going to the gym",3.6,4.9
+2015,activity,watched live sporting event (not on tv),8.2,5.8
+2015,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",7.2,5.3
+2015,activity,"went to a special public event such as a festival, exhibition, etc.",5.3,4.0
+2015,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",3.3,2.5
+2015,activity,"went on days out to a beauty/health centre/spa, etc.",1.1,1.2
+2015,activity,went on general days out/ to explore an area,13.3,7.4
+2015,activity,went on day trips/excursions for another leisure purpose not mentioned above,6.1,4.2
+2016,activity,visited friends or family for leisure,25.2,19.3
+2016,activity,'special' shopping for items that you do not regularly buy,12.2,5.7
+2016,activity,went out for a meal,23.6,12.6
+2016,activity,"went on a night out to a bar, pub and/or club",11.4,8.7
+2016,activity,"went out for entertainment – to a cinema, concert or theatre",6.5,6.5
+2016,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",19.0,10.5
+2016,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",3.7,5.0
+2016,activity,"took part in sports, including exercise classes, going to the gym",3.8,4.5
+2016,activity,watched live sporting event (not on tv),6.1,6.2
+2016,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",6.1,6.7
+2016,activity,"went to a special public event such as a festival, exhibition, etc.",2.9,3.3
+2016,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",3.0,2.3
+2016,activity,"went on days out to a beauty/health centre/spa, etc.",1.5,0.5
+2016,activity,went on general days out/ to explore an area,12.5,6.6
+2016,activity,went on day trips/excursions for another leisure purpose not mentioned above,7.3,4.4
+2017,activity,visited friends or family for leisure,23.4,25.7
+2017,activity,'special' shopping for items that you do not regularly buy,12.0,8.6
+2017,activity,went out for a meal,21.4,17.1
+2017,activity,"went on a night out to a bar, pub and/or club",11.1,11.7
+2017,activity,"went out for entertainment – to a cinema, concert or theatre",7.4,7.6
+2017,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",20.5,14.1
+2017,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",4.6,4.8
+2017,activity,"took part in sports, including exercise classes, going to the gym",4.4,5.9
+2017,activity,watched live sporting event (not on tv),6.0,5.7
+2017,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",7.3,7.1
+2017,activity,"went to a special public event such as a festival, exhibition, etc.",4.2,5.8
+2017,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",3.4,3.0
+2017,activity,"went on days out to a beauty/health centre/spa, etc.",1.3,2.5
+2017,activity,went on general days out/ to explore an area,14.5,10.6
+2017,activity,went on day trips/excursions for another leisure purpose not mentioned above,4.4,4.8
+2018,activity,visited friends or family for leisure,24.8,20.3
+2018,activity,'special' shopping for items that you do not regularly buy,11.0,6.6
+2018,activity,went out for a meal,23.5,13.9
+2018,activity,"went on a night out to a bar, pub and/or club",10.7,8.0
+2018,activity,"went out for entertainment – to a cinema, concert or theatre",7.9,5.4
+2018,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",15.5,9.8
+2018,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",3.3,5.6
+2018,activity,"took part in sports, including exercise classes, going to the gym",5.4,3.3
+2018,activity,watched live sporting event (not on tv),7.3,3.9
+2018,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",8.7,5.0
+2018,activity,"went to a special public event such as a festival, exhibition, etc.",4.1,2.6
+2018,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",2.5,2.4
+2018,activity,"went on days out to a beauty/health centre/spa, etc.",1.8,0.7
+2018,activity,went on general days out/ to explore an area,14.5,10.8
+2018,activity,went on day trips/excursions for another leisure purpose not mentioned above,5.9,4.3
+2019,activity,visited friends or family for leisure,27.0,21.7
+2019,activity,'special' shopping for items that you do not regularly buy,12.6,7.1
+2019,activity,went out for a meal,18.8,14.4
+2019,activity,"went on a night out to a bar, pub and/or club",9.4,8.4
+2019,activity,"went out for entertainment – to a cinema, concert or theatre",7.0,5.7
+2019,activity,"undertook outdoor leisure activities such as walking, cycling, golf, etc.",16.5,13.4
+2019,activity,"took part in other leisure activities such as hobbies, evening classes, etc. (outside of your home)",5.1,5.6
+2019,activity,"took part in sports, including exercise classes, going to the gym",4.4,3.0
+2019,activity,watched live sporting event (not on tv),7.4,5.1
+2019,activity,"went to visitor attractions such as a historic house, garden, theme park, museum, zoo, etc.",8.4,4.7
+2019,activity,"went to a special public event such as a festival, exhibition, etc.",3.7,4.6
+2019,activity,"went to a special event of a personal nature such as a wedding, graduation, christening, etc.",2.5,3.4
+2019,activity,"went on days out to a beauty/health centre/spa, etc.",3.6,1.3
+2019,activity,went on general days out/ to explore an area,12.8,11.0
+2019,activity,went on day trips/excursions for another leisure purpose not mentioned above,5.1,3.7
+2011,place,city/large town,39.3,25.8
+2011,place,small town,28.1,15.3
+2011,place,village,11.5,6.6
+2011,place,rural countryside,16.5,7.6
+2011,place,seaside resort or town,6.8,3.1
+2011,place,seaside coastline - a beach,4.4,2.6
+2011,place,other seaside coastline,1.5,0.7
+2011,place,other,2.7,0.7
+2012,place,city/large town,45.5,29.8
+2012,place,small town,30.1,13.9
+2012,place,village,11.8,6.7
+2012,place,rural countryside,16.5,7.9
+2012,place,seaside resort or town,5.5,3.3
+2012,place,seaside coastline - a beach,4.2,2.0
+2012,place,other seaside coastline,1.9,0.3
+2012,place,other,2.4,1.1
+2013,place,city/large town,38.1,30.2
+2013,place,small town,24.7,12.7
+2013,place,village,11.4,5.3
+2013,place,rural countryside,13.6,7.1
+2013,place,seaside resort or town,5.4,3.4
+2013,place,seaside coastline - a beach,3.7,1.4
+2013,place,other seaside coastline,1.8,1.1
+2013,place,other,1.3,1.1
+2014,place,city/large town,38.8,29.2
+2014,place,small town,23.6,16.3
+2014,place,village,8.7,5.4
+2014,place,rural countryside,12.7,8.6
+2014,place,seaside resort or town,5.3,4.2
+2014,place,seaside coastline - a beach,3.5,1.6
+2014,place,other seaside coastline,0.7,1.8
+2015,place,city/large town,35.2,32.3
+2015,place,small town,21.9,15.2
+2015,place,village,7.7,5.0
+2015,place,rural countryside,14.1,5.8
+2015,place,seaside resort or town,4.7,3.8
+2015,place,seaside coastline - a beach,3.3,1.4
+2015,place,other seaside coastline,1.1,0.7
+2016,place,city/large town,35.4,25.7
+2016,place,small town,23.6,15.0
+2016,place,village,9.4,7.4
+2016,place,rural countryside,14.0,7.4
+2016,place,seaside resort or town,4.8,2.3
+2016,place,seaside coastline - a beach,2.7,2.0
+2016,place,other seaside coastline,1.0,1.0
+2017,place,city/large town,33.5,36.6
+2017,place,small town,21.5,18.5
+2017,place,village,9.2,9.5
+2017,place,rural countryside,12.8,8.2
+2017,place,seaside resort or town,5.4,3.8
+2017,place,seaside coastline - a beach,5.3,3.0
+2017,place,other seaside coastline,0.7,1.0
+2018,place,city/large town,36.9,26.6
+2018,place,small town,18.6,19.0
+2018,place,village,9.3,6.1
+2018,place,rural countryside,10.7,6.4
+2018,place,seaside resort or town,4.4,3.3
+2018,place,seaside coastline - a beach,3.4,1.9
+2018,place,other seaside coastline,0.3,1.5
+2019,place,city/large town,34.3,24.5
+2019,place,small town,22.9,13.6
+2019,place,village,8.5,7.8
+2019,place,rural countryside,11.7,6.9
+2019,place,seaside resort or town,4.8,4.2
+2019,place,seaside coastline - a beach,2.9,3.8
+2019,place,other seaside coastline,1.0,0.4
+2011,transport,any car (net),72.3,31.2
+2011,transport,car - own/friends/family,71.2,29.9
+2011,transport,car - hired,1.0,1.3
+2011,transport,public transport (net),12.1,13.6
+2011,transport,train,6.1,6.7
+2011,transport,a regular bus\coach,5.9,6.9
+2011,transport,organised coach tour,1.5,0.7
+2011,transport,taxi,3.4,1.4
+2011,transport,walked\on foot,6.1,5.7
+2011,transport,bicycle,0.3,0.4
+2011,transport,minibus,0.4,0.3
+2011,transport,motor cycle,0.1,0.5
+2011,transport,tube,0.3,0.4
+2011,transport,tram,0.5,0.0
+2011,transport,motorised caravan\campervan,0.2,0.4
+2011,transport,plane,0.8,0.8
+2011,transport,boat\ship\ferry,0.1,0.4
+2011,transport,lorry\truck\van,0.0,0.1
+2011,transport,other,0.2,0.0
+2012,transport,any car (net),79.7,31.2
+2012,transport,car - own/friends/family,79.0,30.4
+2012,transport,car - hired,0.7,0.8
+2012,transport,public transport (net),12.8,16.0
+2012,transport,train,6.2,8.3
+2012,transport,a regular bus\coach,6.6,7.7
+2012,transport,organised coach tour,1.4,0.4
+2012,transport,taxi,2.3,1.4
+2012,transport,walked\on foot,6.0,4.5
+2012,transport,bicycle,1.1,0.9
+2012,transport,minibus,0.3,0.3
+2012,transport,motor cycle,0.0,0.1
+2012,transport,tube,0.2,0.3
+2012,transport,tram,0.1,0.0
+2012,transport,motorised caravan\campervan,0.0,0.0
+2012,transport,plane,0.5,0.0
+2012,transport,boat\ship\ferry,0.5,0.2
+2012,transport,lorry\truck\van,0.3,1.7
+2012,transport,other,0.5,0.6
+2013,transport,any car (net),62.9,30.6
+2013,transport,car - own/friends/family,62.1,29.5
+2013,transport,car - hired,0.8,1.2
+2013,transport,public transport (net),15.2,14.8
+2013,transport,train,7.5,7.7
+2013,transport,a regular bus\coach,7.7,7.1
+2013,transport,organised coach tour,0.6,1.0
+2013,transport,taxi,1.5,1.6
+2013,transport,walked\on foot,4.0,4.5
+2013,transport,bicycle,0.8,1.0
+2013,transport,minibus,0.1,0.1
+2013,transport,motor cycle,0.0,0.5
+2013,transport,tube,0.1,0.2
+2013,transport,tram,0.0,0.0
+2013,transport,motorised caravan\campervan,0.2,0.2
+2013,transport,plane,0.1,0.2
+2013,transport,boat\ship\ferry,0.6,0.3
+2013,transport,lorry\truck\van,0.1,0.3
+2013,transport,other,0.4,0.4
+2014,transport,car - own/friends/family,59.4,35.1
+2014,transport,car - hired,0.5,1.1
+2014,transport,public transport,15.8,13.9
+2014,transport,train,8.8,7.6
+2014,transport,a regular bus\coach,7.0,6.3
+2014,transport,organised coach tour,0.7,0.1
+2014,transport,taxi,1.8,3.1
+2014,transport,walked\on foot,4.2,5.3
+2014,transport,bicycle,0.3,1.2
+2014,transport,minibus,0.1,0.2
+2014,transport,motor cycle,0.0,0.1
+2014,transport,tube,0.0,0.0
+2014,transport,tram,0.3,0.2
+2014,transport,motorised caravan\campervan,0.1,0.0
+2014,transport,plane,0.0,0.6
+2014,transport,boat\ship\ferry,0.6,0.1
+2014,transport,lorry\truck\van,0.1,0.1
+2014,transport,other,0.5,0.7
+2015,transport,car - own/friends/family,60.7,26.7
+2015,transport,car - hired,0.9,1.0
+2015,transport,public transport,13.2,20.5
+2015,transport,train,6.9,10.5
+2015,transport,a regular bus\coach,6.4,10.0
+2015,transport,organised coach tour,0.8,1.3
+2015,transport,taxi,1.1,2.3
+2015,transport,walked\on foot,3.4,5.4
+2015,transport,bicycle,0.5,0.5
+2015,transport,minibus,0.8,0.3
+2015,transport,motor cycle,0.2,0.0
+2015,transport,tube,0.1,0.0
+2015,transport,tram,0.1,0.1
+2015,transport,motorised caravan\campervan,0.1,0.1
+2015,transport,plane,0.6,0.5
+2015,transport,boat\ship\ferry,0.5,0.2
+2015,transport,lorry\truck\van,0.1,0.0
+2015,transport,other,0.3,0.3
+2016,transport,car - own/friends/family,58.9,33.0
+2016,transport,car - hired,1.6,0.9
+2016,transport,public transport,14.1,13.8
+2016,transport,train,7.1,6.9
+2016,transport,a regular bus\coach,7.0,6.9
+2016,transport,organised coach tour,0.7,0.9
+2016,transport,taxi,3.3,1.6
+2016,transport,walked\on foot,3.6,4.3
+2016,transport,bicycle,0.7,0.2
+2016,transport,tube,0.3,0.2
+2016,transport,tram,0.1,0.1
+2016,transport,motorised caravan\campervan,0.4,0.1
+2016,transport,plane,0.4,0.3
+2016,transport,boat\ship\ferry,0.0,0.1
+2016,transport,lorry\truck\van,0.2,0.1
+2016,transport,other,0.7,1.4
+2017,transport,car - own/friends/family,55.5,37.0
+2017,transport,car - hired,1.8,4.6
+2017,transport,public transport,13.8,15.4
+2017,transport,train,7.8,8.2
+2017,transport,a regular bus\coach,6.0,7.2
+2017,transport,organised coach tour,1.6,1.4
+2017,transport,taxi,2.3,1.6
+2017,transport,walked\on foot,3.4,5.2
+2017,transport,bicycle,0.6,0.9
+2017,transport,tube,0.5,0.1
+2017,transport,tram,0.2,0.4
+2017,transport,motorised caravan\campervan,0.8,0.0
+2017,transport,plane,0.5,1.2
+2017,transport,boat\ship\ferry,0.3,0.2
+2017,transport,lorry\truck\van,0.1,0.4
+2017,transport,other,0.4,0.7
+2018,transport,car - own/friends/family,55.0,29.2
+2018,transport,car - hired,1.5,1.3
+2018,transport,public transport,12.7,16.3
+2018,transport,train,7.4,9.4
+2018,transport,a regular bus\coach,5.3,6.9
+2018,transport,organised coach tour,0.6,0.5
+2018,transport,taxi,1.6,1.8
+2018,transport,walked\on foot,5.0,6.2
+2018,transport,bicycle,0.1,0.6
+2018,transport,tube,0.1,0.5
+2018,transport,tram,0.2,0.1
+2018,transport,motorised caravan\campervan,0.1,0.1
+2018,transport,plane,0.9,0.8
+2018,transport,boat\ship\ferry,0.1,0.0
+2018,transport,lorry\truck\van,0.0,0.3
+2018,transport,other,0.9,1.1
+2019,transport,car - own/friends/family,52.2,27.8
+2019,transport,car - hired,1.4,0.9
+2019,transport,public transport,13.7,14.9
+2019,transport,train,8.2,7.7
+2019,transport,a regular bus\coach,5.5,7.3
+2019,transport,organised coach tour,1.3,1.2
+2019,transport,taxi,3.0,2.7
+2019,transport,walked\on foot,3.9,3.7
+2019,transport,bicycle,0.5,0.7
+2019,transport,tube,0.4,1.2
+2019,transport,tram,0.1,0.2
+2019,transport,motorised caravan\campervan,0.1,0.3
+2019,transport,plane,0.5,0.8
+2019,transport,boat\ship\ferry,0.3,0.2
+2019,transport,lorry\truck\van,0.1,0.2
+2019,transport,other,0.7,0.6
