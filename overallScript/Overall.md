@@ -42,5 +42,5 @@ The same with Cars.
 **PyMySQL**: Used to read the data from database.  
 **Pandas**: Used to convert the result from database to dataframe.
 
-Make a table about the dataset in database.
+Make a table about the dataset in database.  
 Find working status is the most important part.
