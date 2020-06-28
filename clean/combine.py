@@ -8,4 +8,4 @@ for x in attributes:
     for y in type:
         df = pd.read_csv(os.path.dirname(os.getcwd()) + '/data/' + x + '/' + x + y+'.csv')
         data = pd.concat([data, df])
-    data.to_csv(os.path.dirname(os.getcwd()) + '/data/' + x + '/' + x+'_combine.csv')
+    data.to_csv(os.path.dirname(os.getcwd()) + '/data/' + x + '/' + x+'_combine.csv', index=0)
