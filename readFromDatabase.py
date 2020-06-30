@@ -7,3 +7,7 @@ connection = create_engine("mysql+pymysql://root@localhost:3306/DissertationData
 def readFrom(tableName):
     sql = 'select * from ' + tableName + ';'
     return pd.read_sql_query(sql, connection)
+
+def readAction(tableName, type):
+    sql = 'select * from ' + tableName + ' where Type = \'' + type + '\';'
+    return pd.read_sql_query(sql, connection)
