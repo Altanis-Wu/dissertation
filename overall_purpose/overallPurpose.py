@@ -1,7 +1,5 @@
 from matplotlib import pyplot as plt
 import readFromDatabase as rfd
-import pandas as pd
-import os
 #Lists used to classify the action
 visit = ["visited friends or family for leisure"]
 shopping = ["\'special\' shopping for items that you do not regularly buy"]
@@ -81,11 +79,12 @@ component=component.drop(['Year', 'total'], axis=1)
 for i in range(1, len(attributes)+1):
     ax=plt.subplot(4, 2, i)
     list=component[component['Action']==attributes[i-1]].drop('Action', axis=1).values
-    print(list[0])
     plt.bar(range(len(list[0])), list[0])
     ax.set_xticks(range(len(list[0])))
     ax.set_xticklabels(visitor)
     plt.title('The Age Distribution on \"'+attributes[i-1]+'\"')
     plt.xlabel('Age')
     plt.ylabel('Number of Visitors(Million)')
+    plt.subplots_adjust(hspace=0.5, wspace=0.3)
+plt.savefig('ageDistribution.png')
 plt.show()
