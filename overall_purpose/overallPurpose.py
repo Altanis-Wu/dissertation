@@ -138,3 +138,78 @@ for i in range(1, len(attributes)+1):
     plt.subplots_adjust(hspace=0.5, wspace=0.3)
 plt.savefig('genderDistribution.png')
 plt.show()
+
+
+#To show the relation between purpose and the married status of visitors
+purpose_data = rfd.readAction('married_action', 'activity')
+visitor=['Yes', 'No']
+#Add a column named total to show the number of people who took different type of actions.
+purpose_data['Action'] = purpose_data['Action'].apply(lambda x:classifyPurpose(x))
+all_year_purpose = purpose_data.groupby(['Year', 'Action']).sum().reset_index()
+#Calculate the sum of visitors who took different actions in recent 10 years.
+component=all_year_purpose.groupby('Action').sum().reset_index()
+#The car holders distribution for different purposes
+plt.figure(figsize=(10, 10))
+component=component.drop(['Year'], axis=1)
+for i in range(1, len(attributes)+1):
+    ax=plt.subplot(4, 2, i)
+    list=component[component['Action']==attributes[i-1]].drop('Action', axis=1).values
+    plt.bar(range(len(list[0])), list[0])
+    ax.set_xticks(range(len(list[0])))
+    ax.set_xticklabels(visitor)
+    plt.title('The Distribution of Married Visitors on \"'+attributes[i-1]+'\"')
+    plt.xlabel('Married')
+    plt.ylabel('Number of Visitors(Million)')
+    plt.subplots_adjust(hspace=0.5, wspace=0.3)
+plt.savefig('marriedDistribution.png')
+plt.show()
+
+
+#To show the relation between purpose and the social grades of visitors
+purpose_data = rfd.readAction('social_action', 'activity')
+visitor=['ab', 'c1', 'c2', 'de']
+#Add a column named total to show the number of people who took different type of actions.
+purpose_data['Action'] = purpose_data['Action'].apply(lambda x:classifyPurpose(x))
+all_year_purpose = purpose_data.groupby(['Year', 'Action']).sum().reset_index()
+#Calculate the sum of visitors who took different actions in recent 10 years.
+component=all_year_purpose.groupby('Action').sum().reset_index()
+#The car holders distribution for different purposes
+plt.figure(figsize=(10, 10))
+component=component.drop(['Year'], axis=1)
+for i in range(1, len(attributes)+1):
+    ax=plt.subplot(4, 2, i)
+    list=component[component['Action']==attributes[i-1]].drop('Action', axis=1).values
+    plt.bar(range(len(list[0])), list[0])
+    ax.set_xticks(range(len(list[0])))
+    ax.set_xticklabels(visitor)
+    plt.title('The Distribution of Social Grades on \"'+attributes[i-1]+'\"')
+    plt.xlabel('Social Grade')
+    plt.ylabel('Number of Visitors(Million)')
+    plt.subplots_adjust(hspace=0.5, wspace=0.3)
+plt.savefig('socialDistribution.png')
+plt.show()
+
+
+#To show the relation between purpose and the working status of visitors
+purpose_data = rfd.readAction('working_action', 'activity')
+visitor=['employed', 'in education', 'unemployed']
+#Add a column named total to show the number of people who took different type of actions.
+purpose_data['Action'] = purpose_data['Action'].apply(lambda x:classifyPurpose(x))
+all_year_purpose = purpose_data.groupby(['Year', 'Action']).sum().reset_index()
+#Calculate the sum of visitors who took different actions in recent 10 years.
+component=all_year_purpose.groupby('Action').sum().reset_index()
+#The car holders distribution for different purposes
+plt.figure(figsize=(10, 10))
+component=component.drop(['Year'], axis=1)
+for i in range(1, len(attributes)+1):
+    ax=plt.subplot(4, 2, i)
+    list=component[component['Action']==attributes[i-1]].drop('Action', axis=1).values
+    plt.bar(range(len(list[0])), list[0])
+    ax.set_xticks(range(len(list[0])))
+    ax.set_xticklabels(visitor)
+    plt.title('The Distribution of Working Status on \"'+attributes[i-1]+'\"')
+    plt.xlabel('Working Status')
+    plt.ylabel('Number of Visitors(Million)')
+    plt.subplots_adjust(hspace=0.5, wspace=0.5)
+plt.savefig('workingDistribution.png')
+plt.show()
