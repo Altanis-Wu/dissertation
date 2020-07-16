@@ -1,8 +1,8 @@
-#Analyse the Purpose of Tourism
+# Analyse the Purpose of Tourism
 As it is difficult to analyse the relationship between employment and 
 number of visitors in Scotland. We began to analyse the relationship 
 between purpose of visitors and number of visitors.
-##Classify the Purpose
+## Classify the Purpose
 |Type|Action|
 |---|---|
 |visit friends or family|visited friends or family for leisure|
