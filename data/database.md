@@ -1,5 +1,5 @@
 # Describe the Database  
-##For Visitors:  
+## For Visitors:  
 |Type of Attributes| Atrributes | Type |
 |:----------------:|:----------:|:----:|
 |Time|Year|Integer|
@@ -25,7 +25,7 @@
 |Working Status|employed|Float|
 |Working Status|in education|Float|
 |Working Status|unemployed|Float|
-##For Purposes:
+## For Purposes:
 |Type of Attributes| Atrributes | Type |
 |:----------------:|:----------:|:----:|
 |Time|Year|Integer|
