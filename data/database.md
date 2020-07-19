@@ -52,3 +52,10 @@
 |Working Status|employed|Float|
 |Working Status|in education|Float|
 |Working Status|unemployed|Float|
+
+## Notes
+选择一个目标分析不同的游客数量如何变化  
+选择最重要的factor(属性)  
+数学分析  
+加一列显示有多少列  
+合并数据库表格
