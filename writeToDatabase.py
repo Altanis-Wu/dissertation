@@ -13,7 +13,7 @@ married=['married', 'not married']
 social=['ab', 'c1', 'c2', 'de']
 working=['employed/self-employed (full or part time)', 'in full or part time education', 'unemployed/not working']
 columns=[age, cars, children, gender, social, working, married]
-
+"""
 for i in range(len(inputFile)):
     input = pd.read_csv("data/"+inputFile[i]+"/"+inputFile[i]+".csv")
     input['type']=inputFile[i]
@@ -22,12 +22,16 @@ for i in range(len(inputFile)):
             sql = "insert into visitor values (" + str(row.year) + ", " + str(row.month) + ", \"" \
                   + row.type + "\", \"" + item + "\", " + str(row[item]) + ");"
             connection.execute(sql)
+"""
 
 
 
 #Read each file about attributes and actions as dataframe and write them to database
-"""
-for file in inputFile:
-    input = pd.read_csv("data/"+file.lower()+'/'+file.lower()+"_action.csv")
-    input.to_sql(file.lower()+"_action", connection, schema='DissertationDatabase', if_exists='append', index=False)
-"""
+for i in range(len(inputFile)):
+    input = pd.read_csv("data/"+inputFile[i].lower()+'/'+inputFile[i].lower()+"_action.csv")
+    input['visitor']=inputFile[i]
+    for index, row in input.iterrows():
+        for item in columns[i]:
+            sql = "insert into action values (" + str(row.year) + ", \"" + row.type + "\", \"" + \
+                  row.action + "\", \"" + row.visitor + "\", \"" + item + "\", " + str(row[item])+");"
+            connection.execute(sql)
