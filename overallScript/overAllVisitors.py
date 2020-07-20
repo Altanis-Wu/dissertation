@@ -6,7 +6,6 @@ visitorData = rfd.readFrom('visitor', 'gender')
 plt.figure(figsize=(8, 8))
 #Group the data based on 'Year', calculate the number of visitors for each year and generate a new dataframe.
 overAll = visitorData.groupby('Year').sum().reset_index()
-print(overAll)
 #Draw a line chart to show the overall trend and set labels and titles for the chart.
 plt.plot(overAll['Year'], overAll['Count'], marker='o')
 plt.ylabel('Count(Million)')
