@@ -34,8 +34,29 @@ def classifyPurpose(input):
     else:
         return "other activities"
 
-visitorType=['age', 'cars', 'gender', 'married', 'children', 'social', 'working']
 attributes=['visit friends or family', 'go shopping', 'go for food', 'go for entertainment', 'go for leisure activities',
             'for special event', 'go for health centre', 'other activities']
 purposeData = rfd.readFrom('action', 'activity')
+age=['16-24', '25-34', '35-44', '45-54', '55-64', '65+']
+cars=['access to car (1+)', 'no access to car (0)']
+children=['yes', 'no']
+gender=['male', 'female']
+married=['married', 'not married']
+social=['ab', 'c1', 'c2', 'de']
+working=['employed/self-employed (full or part time)',
+         'in full or part time education', 'unemployed/not working']
+columns=[age, cars, children, gender, social, working, married]
+visitorType=['age', 'cars', 'children', 'gender', 'social', 'working', 'married']
 purposeData['Action'] = purposeData['Action'].apply(lambda x:classifyPurpose(x))
+for action in attributes:
+    for i in range(len(columns)):
+        plt.figure(figsize=(8, 8))
+        data = purposeData[(purposeData['Visitor']==visitorType[i]) & (purposeData['Action']==action)]
+        for column in columns[i]:
+            plt.plot(data[data['Attribute'] == column]['Year'], data[data['Attribute'] == column]['Count'], marker='o')
+        plt.legend(columns[i])
+        plt.title('\"' + action + '\" and ' + visitorType[i])
+        plt.xlabel('Year')
+        plt.ylabel('Count(Million)')
+        plt.savefig(visitorType[i] + '/' + action + '_' + visitorType[i] + '.png')
+        plt.show()
