@@ -15,8 +15,6 @@ special_event = ["went to a special public event such as a festival, exhibition,
                 "went to a special event of a personal nature such as a wedding, graduation, christening, etc."]
 healthCentre = ["went on days out to a beauty/health centre/spa, etc."]
 other = ["went on day trips/excursions for another leisure purpose not mentioned above"]
-attributes=['visit friends or family', 'go shopping', 'go for food', 'go for entertainment', 'go for leisure activities',
-            'for special event', 'go for health centre', 'other activities']
 #the function used to classify the function
 def classifyPurpose(input):
     if input in visit:
@@ -36,4 +34,8 @@ def classifyPurpose(input):
     else:
         return "other activities"
 
-purpose_data = rfd.readAction('action', 'activity', 'age')
+visitorType=['age', 'cars', 'gender', 'married', 'children', 'social', 'working']
+attributes=['visit friends or family', 'go shopping', 'go for food', 'go for entertainment', 'go for leisure activities',
+            'for special event', 'go for health centre', 'other activities']
+purposeData = rfd.readFrom('action', 'activity')
+purposeData['Action'] = purposeData['Action'].apply(lambda x:classifyPurpose(x))
