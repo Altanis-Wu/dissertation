@@ -2,13 +2,15 @@ from matplotlib import pyplot as plt
 import readFromDatabase as rfd
 import os
 #Read data from database
-visitorData = rfd.readFrom('Children')
+visitorData = rfd.readFrom('visitor', 'children')
 plt.figure(figsize=(8, 8))
 #Group the data based on 'Year', calculate the number of visitors for each year and generate a new dataframe.
-overAll = visitorData.groupby('Year')['Yes', 'No'].sum().reset_index()
+overAll = visitorData.groupby(['Year', 'Attribute']).sum().reset_index()
+children=['yes', 'no']
 #Draw a line chart to show the overall trend and set labels and titles for the chart.
-plt.plot(overAll['Year'], overAll['Yes'], marker='o')
-plt.plot(overAll['Year'], overAll['No'], marker='s')
+for x in children:
+    data=overAll[overAll['Attribute']==x]
+    plt.plot(data['Year'], data['Count'], marker='o')
 plt.legend(['Yes', 'No'])
 plt.ylabel('Count(Million)')
 plt.xlabel('Years')

@@ -11,7 +11,8 @@ children=['yes', 'no']
 gender=['male', 'female']
 married=['married', 'not married']
 social=['ab', 'c1', 'c2', 'de']
-working=['employed/self-employed (full or part time)', 'in full or part time education', 'unemployed/not working']
+working=['employed/self-employed (full or part time)',
+         'in full or part time education', 'unemployed/not working']
 columns=[age, cars, children, gender, social, working, married]
 """
 for i in range(len(inputFile)):
