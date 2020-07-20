@@ -8,6 +8,6 @@ def readFrom(tableName, type):
     sql = 'select * from ' + tableName + ' where Type=\"'+type+'\";'
     return pd.read_sql_query(sql, connection)
 
-def readAction(tableName, type):
-    sql = 'select * from ' + tableName + ' where Type = \'' + type + '\';'
+def readAction(tableName, type, visitor):
+    sql = 'select * from ' + tableName + ' where Type= \'' + type + '\' and Visitor= \'' + visitor +'\';'
     return pd.read_sql_query(sql, connection)
