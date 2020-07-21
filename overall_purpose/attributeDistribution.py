@@ -36,7 +36,9 @@ def classifyPurpose(input):
 
 attributes=['visit friends or family', 'go shopping', 'go for food', 'go for entertainment', 'go for leisure activities',
             'for special event', 'go for health centre', 'other activities']
+#Read data from database
 purposeData = rfd.readFrom('action', 'activity')
+#List used to classify visitors and draw the figures.
 age=['16-24', '25-34', '35-44', '45-54', '55-64', '65+']
 cars=['access to car (1+)', 'no access to car (0)']
 children=['yes', 'no']
@@ -48,7 +50,11 @@ working=['employed/self-employed (full or part time)',
 columns=[age, cars, children, gender, social, working, married]
 visitorType=['age', 'cars', 'children', 'gender', 'social', 'working', 'married']
 purposeData['Action'] = purposeData['Action'].apply(lambda x:classifyPurpose(x))
+#Group the based on action as the detailed 15 actions are classified into 8 actions.
+purposeData=purposeData.groupby(['Year', 'Action', 'Visitor', 'Attribute']).sum().reset_index()
+#Draw the figures for each action
 for action in attributes:
+    #For each type of visitors which took different action, draw the figures to find the trend.
     for i in range(len(columns)):
         plt.figure(figsize=(8, 8))
         data = purposeData[(purposeData['Visitor']==visitorType[i]) & (purposeData['Action']==action)]
