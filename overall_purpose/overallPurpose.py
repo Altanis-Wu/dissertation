@@ -40,12 +40,14 @@ def classifyPurpose(input):
 purpose_data = rfd.readAction('action', 'activity', 'age')
 purpose_data['Action'] = purpose_data['Action'].apply(lambda x:classifyPurpose(x))
 all_year_purpose = purpose_data.groupby(['Year', 'Action']).sum().reset_index()
+print(all_year_purpose[all_year_purpose['Year']==2011])
 plt.figure(figsize=(8, 8))
 #Select the data from dataframe based on action.
 visitData=all_year_purpose[(all_year_purpose['Action']=='visit friends or family')]
 shoppingData=all_year_purpose[(all_year_purpose['Action']=='go shopping')]
 foodData=all_year_purpose[(all_year_purpose['Action']=='go for food')]
 entertainmentData=all_year_purpose[(all_year_purpose['Action']=='go for entertainment')]
+leisureData=all_year_purpose[(all_year_purpose['Action']=='go for leisure activities')]
 speicalData=all_year_purpose[(all_year_purpose['Action']=='for special event')]
 healthCentreData=all_year_purpose[(all_year_purpose['Action']=='go for health centre')]
 otherData=all_year_purpose[(all_year_purpose['Action']=='other activities')]
@@ -54,6 +56,7 @@ plt.plot(visitData['Year'], visitData['Count'], marker='o')
 plt.plot(shoppingData['Year'], speicalData['Count'], marker='o')
 plt.plot(foodData['Year'], foodData['Count'], marker='o')
 plt.plot(entertainmentData['Year'], entertainmentData['Count'], marker='o')
+plt.plot(leisureData['Year'], leisureData['Count'], marker='o')
 plt.plot(speicalData['Year'], speicalData['Count'], marker='o')
 plt.plot(healthCentreData['Year'], healthCentreData['Count'], marker='o')
 plt.plot(otherData['Year'], otherData['Count'], marker='o')
