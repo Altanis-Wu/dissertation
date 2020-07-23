@@ -1,0 +1,5 @@
+Attribute,employed/self-employed (full or part time),in full or part time education,unemployed/not working,total
+employed/self-employed (full or part time),1.0,-0.32273059069149307,0.5186280443352719,0.9541170133190692
+in full or part time education,-0.32273059069149307,1.0,-0.18948850867045386,-0.23557067012627295
+unemployed/not working,0.5186280443352719,-0.18948850867045386,1.0,0.4970649851199245
+total,0.9541170133190692,-0.23557067012627295,0.4970649851199245,1.0
