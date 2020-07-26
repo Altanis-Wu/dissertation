@@ -26,7 +26,8 @@ for i in range(len(names)):
         y = total.values.reshape(-1, 1)
         reg = LinearRegression()
         reg.fit(x, y)
-        print("The linear model is: Y = {:.5} + {:.5}X".format(reg.intercept_[0], reg.coef_[0][0]))
+        print(item)
+        print("The linear model is: y = {:.5} + {:.5}x".format(reg.intercept_[0], reg.coef_[0][0]))
         predictions = reg.predict(x)
         x = tem[tem['Attribute'] == item]['Count']
         y = total.values.reshape(-1, 1)
