@@ -1,0 +1,4 @@
+Attribute,married,not married,total
+married,1.0,-0.16666666666666666,0.75
+not married,-0.16666666666666666,1.0,0.3
+total,0.75,0.3,1.0

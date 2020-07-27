@@ -1,0 +1,4 @@
+Attribute,access to car (1+),no access to car (0),total
+access to car (1+),1.0,-0.11666666666666667,0.8166666666666667
+no access to car (0),-0.11666666666666667,1.0,0.45
+total,0.8166666666666667,0.45,1.0

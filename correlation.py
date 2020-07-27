@@ -15,3 +15,4 @@ for i in range(len(Data)):
     tem=tem.pivot(index='Year', columns='Attribute', values='Count').reset_index().drop(columns=['Year'])
     tem['total']=total
     tem.corr().to_csv('correlation/'+names[i]+'_cor.csv')
+    tem.corr(method='spearman').to_csv('correlation/'+names[i]+'_spearman.csv')
