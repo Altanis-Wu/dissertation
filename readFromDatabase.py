@@ -11,3 +11,7 @@ def readFrom(tableName, type):
 def readAction(tableName, type, visitor):
     sql = 'select * from ' + tableName + ' where Type= \'' + type + '\' and Visitor= \'' + visitor +'\';'
     return pd.read_sql_query(sql, connection)
+
+def readCertainVisitor(tableName, type, attribute):
+    sql = 'select * from ' + tableName + ' where Type=\"' + type + '\" and Attribute= \'' + attribute + '\';'
+    return pd.read_sql_query(sql, connection)
