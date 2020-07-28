@@ -9,6 +9,8 @@ list=[('gender', 'female'), ('cars', 'access to car (1+)'), ('married', 'married
 for item in list:
     plt.figure(figsize=(8, 8))
     data=rfd.readCertainVisitor('visitor', item[0], item[1]).groupby('Year').sum().reset_index()
+    print(data.corr())
+    print(data.corr(method='spearman'))
     plt.scatter(data['Year'], data['Count'])
     x=data['Year'].values.reshape(-1, 1)
     y=data['Count'].values.reshape(-1, 1)
@@ -23,7 +25,7 @@ for item in list:
     x2 = sm.add_constant(x)
     est = sm.OLS(y, x2)
     est2 = est.fit()
-    print(est2.summary())
+    #print(est2.summary())
     plt.xlabel('Year')
     plt.ylabel('Number of Visitors')
     plt.title('Number of visistors in '+item[1])
