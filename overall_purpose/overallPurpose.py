@@ -40,7 +40,6 @@ def classifyPurpose(input):
 purpose_data = rfd.readAction('action', 'activity', 'age')
 purpose_data['Action'] = purpose_data['Action'].apply(lambda x:classifyPurpose(x))
 all_year_purpose = purpose_data.groupby(['Year', 'Action']).sum().reset_index()
-print(all_year_purpose[all_year_purpose['Year']==2011])
 plt.figure(figsize=(8, 8))
 #Select the data from dataframe based on action.
 visitData=all_year_purpose[(all_year_purpose['Action']=='visit friends or family')]
@@ -53,7 +52,7 @@ healthCentreData=all_year_purpose[(all_year_purpose['Action']=='go for health ce
 otherData=all_year_purpose[(all_year_purpose['Action']=='other activities')]
 #Draw the line chart to show the trend of visitors for differnet purposes
 plt.plot(visitData['Year'], visitData['Count'], marker='o')
-plt.plot(shoppingData['Year'], speicalData['Count'], marker='o')
+plt.plot(shoppingData['Year'], shoppingData['Count'], marker='o')
 plt.plot(foodData['Year'], foodData['Count'], marker='o')
 plt.plot(entertainmentData['Year'], entertainmentData['Count'], marker='o')
 plt.plot(leisureData['Year'], leisureData['Count'], marker='o')
