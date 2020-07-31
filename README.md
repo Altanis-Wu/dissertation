@@ -7,7 +7,4 @@ Dissertation for Tourism
 尝试尽可能多的线性回归（不同种游客人数和总人数），画图直观展示相关性
 
 #Most relative type
-gender, female  
-cars, access to cars  
-Married, married
-Working, employed
+0.7给了最好的效果

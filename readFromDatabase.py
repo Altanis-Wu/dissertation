@@ -15,3 +15,12 @@ def readAction(tableName, type, visitor):
 def readCertainVisitor(tableName, type, attribute):
     sql = 'select * from ' + tableName + ' where Type=\"' + type + '\" and Attribute= \'' + attribute + '\';'
     return pd.read_sql_query(sql, connection)
+
+def meanAbsoluteError(predict, actual):
+    sum = 0;
+    for i in range(len(predict)):
+        if predict[i]>actual[i]:
+            sum+=predict[i]-actual[i]
+        else:
+            sum+=actual[i]-predict[i]
+    return sum/len(predict)

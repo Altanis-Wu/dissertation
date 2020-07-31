@@ -8,8 +8,8 @@ list=[('gender', 'female'), ('cars', 'access to car (1+)'), ('married', 'married
 for item in list:
     plt.figure(figsize=(8, 8))
     data=rfd.readCertainVisitor('visitor', item[0], item[1]).groupby('Year').sum().reset_index()
-    print(data.corr())
-    print(data.corr(method='spearman'))
+    #print(data.corr())
+    #print(data.corr(method='spearman'))
     plt.scatter(data['Year'], data['Count'])
     x=data['Year'].values.reshape(-1, 1)
     y=data['Count'].values.reshape(-1, 1)
@@ -20,6 +20,7 @@ for item in list:
     predictions = reg.predict(x)
     kf = ss.chisquare(data['Count'].to_list(), f_exp=predictions.flatten())
     print(kf)
+    print(rfd.meanAbsoluteError(data['Count'].to_list(), predictions.flatten()))
     plt.plot(data['Year'], predictions)
     plt.xlabel('Year')
     plt.ylabel('Number of Visitors')
