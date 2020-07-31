@@ -26,10 +26,12 @@ for i in list:
     reg2.fit(x, y)
     predictions = reg2.predict(predictions)
     # Number of visitors for next year is 133.579 million for married visitors and 135.277 million for female visitor.
-    #Both of them Chi-square about 0.982
+    #Chi-square for female visitor is 1.925, and for married visitor is 1.969
+    #MSE for female visitors is 4.386, and for married visitor is 4.462
     plt.plot(range(2011, 2021), predictions, marker='o')
     kf=ss.chisquare(total['Count'].to_list(), f_exp=predictions[:-1].flatten())
     print(kf)
+    print(rfd.meanAbsoluteError(total['Count'].to_list(), predictions[:-1].flatten()))
 plt.legend(['Actual value', 'Prediction value based on married visitor', 'Prediction value based on female visitor'])
 plt.xlabel('Year')
 plt.ylabel('Number of Visitors(Million)')
