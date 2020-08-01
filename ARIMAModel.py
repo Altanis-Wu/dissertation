@@ -1,9 +1,9 @@
 import readFromDatabase as rfd
 import matplotlib.pyplot as plt
-import pandas as pd
 import math
 
 timeData=rfd.readFrom('visitor', 'age').groupby(['Year', 'Month']).sum().reset_index()
+timeData['Count']=timeData['Count'].apply(lambda x:math.log(x))
 rollMean=timeData['Count'].rolling(window=12).mean()
 plt.plot(range(len(timeData['Count'])), timeData['Count'])
 rollMean.plot()
