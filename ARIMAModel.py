@@ -6,7 +6,8 @@ import numpy as np
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima_model import ARIMA
-import math
+import scipy.stats as ss
+from sklearn.metrics import mean_squared_error, r2_score
 #The function to make a Dickey-Fuller test
 def teststationarity(ts):
     dftest = adfuller(ts)
@@ -17,14 +18,12 @@ def teststationarity(ts):
     return dfoutput
 #The function to draw the figures about auto-correlation and partial auto-correlation.
 def draw_acf_pacf(ts,lags):
-    plt.figure(figsize=(8, 8))
     f = plt.figure(facecolor='white')
     ax1 = f.add_subplot(2, 1, 1)
     plot_acf(ts,ax=ax1,lags=lags)
     ax2 = f.add_subplot(2, 1, 2)
     plot_pacf(ts,ax=ax2,lags=lags)
     plt.subplots_adjust(hspace=0.5)
-    plt.savefig('figures/ACF&PACF.png')
     plt.show()
 #Generate the date for index
 date=[]
@@ -89,4 +88,7 @@ plt.xlabel('Date')
 plt.ylabel('Number of Visitors(Million)')
 plt.savefig('figures/ARIMA.png')
 plt.show()
-#print(rfd.meanAbsoluteError(predict['Count'].to_list(), timeData['Count'].to_list()))
+#Chi_square=2.02, MAE=4.03
+print(rfd.meanAbsoluteError(predict['Count'].to_list(), timeData['Count'].to_list()))
+print(ss.chisquare(timeData['Count'].to_list(), f_exp=predict['Count'].to_list()))
+print(predict['Count'].to_list())

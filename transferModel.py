@@ -10,6 +10,7 @@ total=ageData.groupby('Year').sum().reset_index()
 list=[('married', 'married'), ('gender', 'female')]
 plt.figure(figsize=(8, 8))
 plt.plot(total['Year'], total['Count'], marker='o')
+ARIMA=[150.6, 144.7, 146.7, 144.4, 142.3, 140.3, 137.2, 137.7]
 for i in list:
     data = rfd.readCertainVisitor('visitor', i[0], i[1]).groupby('Year').sum().reset_index()
     x = data['Year'].values.reshape(-1, 1)
@@ -38,3 +39,5 @@ plt.ylabel('Number of Visitors(Million)')
 plt.title('Total Number of Visitors Over years')
 plt.savefig('figures/predictionTransferModel.png')
 plt.show()
+print(ss.chisquare(total['Count'].to_list()[1:], f_exp=ARIMA))
+print(rfd.meanAbsoluteError(total['Count'].to_list()[1:], ARIMA))
