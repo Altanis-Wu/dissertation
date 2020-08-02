@@ -33,7 +33,7 @@ for i in range(2011, 2020):
 #Read the data from database and set the date as index.
 timeData=rfd.readFrom('visitor', 'age').groupby(['Year', 'Month']).sum().reset_index()
 timeData['date']=date
-timeData=timeData.set_index(pd.to_datetime(timeData['date']))
+timeData=timeData.set_index(pd.to_datetime(timeData['date'], format='%Y-%m'))
 timeData=timeData.drop(columns=['Year', 'Month', 'date'])
 #To reduce the data fluctuation range, make logarithm operation
 tsLog=np.log(timeData)
@@ -72,13 +72,13 @@ plt.show()
 print(teststationarity(residual))
 draw_acf_pacf(tsLog, 30)
 #Build the ARIMA model
-model = ARIMA(tsLog, order=(12, 0, 12))
+model = ARIMA(tsLog, order=(36, 0, 5))
 resultArima = model.fit( disp=-1, method='css')
 predictTs = resultArima.predict()
 predict=np.exp(predictTs).reset_index()
 predict.columns=['date', 'Count']
 predict=predict.set_index(predict['date']).drop(columns=['date'])
-timeData=timeData.iloc[12:]
+timeData=timeData.iloc[36:]
 plt.figure(figsize=(8, 8))
 plt.plot(timeData)
 plt.plot(predict)
@@ -88,7 +88,8 @@ plt.xlabel('Date')
 plt.ylabel('Number of Visitors(Million)')
 plt.savefig('figures/ARIMA.png')
 plt.show()
-#Chi_square=2.02, MAE=4.03
+#Chi_square=0.80, MAE=3.8
 print(rfd.meanAbsoluteError(predict['Count'].to_list(), timeData['Count'].to_list()))
 print(ss.chisquare(timeData['Count'].to_list(), f_exp=predict['Count'].to_list()))
+print(np.sqrt(mean_squared_error(timeData['Count'].to_list(), predict['Count'].to_list())))
 print(predict['Count'].to_list())

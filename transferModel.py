@@ -10,7 +10,7 @@ total=ageData.groupby('Year').sum().reset_index()
 list=[('married', 'married'), ('gender', 'female')]
 plt.figure(figsize=(8, 8))
 plt.plot(total['Year'], total['Count'], marker='o')
-ARIMA=[150.6, 144.7, 146.7, 144.4, 142.3, 140.3, 137.2, 137.7]
+ARIMA=[141.4, 144.0, 146.5, 143.4, 136.7, 137.3]
 for i in list:
     data = rfd.readCertainVisitor('visitor', i[0], i[1]).groupby('Year').sum().reset_index()
     x = data['Year'].values.reshape(-1, 1)
@@ -33,11 +33,11 @@ for i in list:
     kf=ss.chisquare(total['Count'].to_list(), f_exp=predictions[:-1].flatten())
     print(kf)
     print(rfd.meanAbsoluteError(total['Count'].to_list(), predictions[:-1].flatten()))
-plt.legend(['Actual value', 'Prediction value based on married visitor', 'Prediction value based on female visitor'])
+plt.legend(['Actual value', 'Prediction value based on married visitor', 'Prediction value based on female visitor', 'ARIMA'])
 plt.xlabel('Year')
 plt.ylabel('Number of Visitors(Million)')
 plt.title('Total Number of Visitors Over years')
 plt.savefig('figures/predictionTransferModel.png')
 plt.show()
-print(ss.chisquare(total['Count'].to_list()[1:], f_exp=ARIMA))
-print(rfd.meanAbsoluteError(total['Count'].to_list()[1:], ARIMA))
+print(ss.chisquare(total['Count'].to_list()[3:], f_exp=ARIMA))
+print(rfd.meanAbsoluteError(total['Count'].to_list()[3:], ARIMA))
