@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.seasonal import seasonal_decompose
-from statsmodels.tsa.arima_model import ARMA
+from statsmodels.tsa.arima_model import ARIMA
 import math
 #The function to make a Dickey-Fuller test
 def teststationarity(ts):
@@ -17,12 +17,14 @@ def teststationarity(ts):
     return dfoutput
 #The function to draw the figures about auto-correlation and partial auto-correlation.
 def draw_acf_pacf(ts,lags):
+    plt.figure(figsize=(8, 8))
     f = plt.figure(facecolor='white')
     ax1 = f.add_subplot(2, 1, 1)
     plot_acf(ts,ax=ax1,lags=lags)
     ax2 = f.add_subplot(2, 1, 2)
     plot_pacf(ts,ax=ax2,lags=lags)
     plt.subplots_adjust(hspace=0.5)
+    plt.savefig('figures/ACF&PACF.png')
     plt.show()
 #Generate the date for index
 date=[]
@@ -70,3 +72,21 @@ plt.savefig('figures/mean&stdResidual.png')
 plt.show()
 print(teststationarity(residual))
 draw_acf_pacf(tsLog, 30)
+#Build the ARIMA model
+model = ARIMA(tsLog, order=(12, 0, 12))
+resultArima = model.fit( disp=-1, method='css')
+predictTs = resultArima.predict()
+predict=np.exp(predictTs).reset_index()
+predict.columns=['date', 'Count']
+predict=predict.set_index(predict['date']).drop(columns=['date'])
+timeData=timeData.iloc[12:]
+plt.figure(figsize=(8, 8))
+plt.plot(timeData)
+plt.plot(predict)
+plt.legend(['Actual', 'Predict'])
+plt.title('The Actual Values and the Predict Values')
+plt.xlabel('Date')
+plt.ylabel('Number of Visitors(Million)')
+plt.savefig('figures/ARIMA.png')
+plt.show()
+#print(rfd.meanAbsoluteError(predict['Count'].to_list(), timeData['Count'].to_list()))
