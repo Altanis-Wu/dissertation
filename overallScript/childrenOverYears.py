@@ -14,6 +14,7 @@ for x in children:
 plt.legend(['Yes', 'No'])
 plt.ylabel('Count(Million)')
 plt.xlabel('Years')
+plt.xlim(2011)
 plt.title('Number of Visitors who Have Children for Day Visist in Scotland')
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/ChildrenOverYears.png')

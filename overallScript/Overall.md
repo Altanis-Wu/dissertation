@@ -4,7 +4,7 @@ from 2012 to 2013, the number of tourists decrease repidly. Then, it went up sli
 2013 to 2017. After 2017, it began to fall down and reached the minimum number in 2019.
 ## Working Status
 Firstly, we could divided people based on their working status.From the figure, 
-we can see thatThe visitors who have job is the main part of day visits 
+we can see that the visitors who have job is the main part of day visits 
 in Scotland and  the curve of employed or self-employed visitors is similar with the curve 
 of overall trend. The number of visitors who have jobs rose up at beginning and decreases 
 swiftly between 2012 and 2013. From 2012 to 2017, it was rising overall with volatity.

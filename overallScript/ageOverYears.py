@@ -15,6 +15,7 @@ for x in age:
 plt.legend(['16-24', '25-34', '35-44', '45-54', '55-64', '65+'])
 plt.ylabel('Count(Million)')
 plt.xlabel('Years')
+plt.xlim(2011)
 plt.title('Number of Visitors from Different Age for Day Visist in Scotland')
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/AgeOverYears.png')

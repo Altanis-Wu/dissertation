@@ -15,6 +15,7 @@ for x in social:
 plt.legend(['AB', 'C1', 'C2', 'DE'])
 plt.ylabel('Count(Million)')
 plt.xlabel('Years')
+plt.xlim(2011)
 plt.title('Number of Visitors from Social Grade for Day Visist in Scotland')
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/SocialOverYears.png')

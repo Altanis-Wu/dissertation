@@ -18,6 +18,7 @@ plt.legend(['Employed/self-employed (full or part time)',
                                       'Unemployed/not working'])
 plt.ylabel('Count(Million)')
 plt.xlabel('Years')
+plt.xlim(2011)
 plt.title('Number of Visitors from Different Working Status for Day Visist in Scotland')
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/WorkingOverYears.png')

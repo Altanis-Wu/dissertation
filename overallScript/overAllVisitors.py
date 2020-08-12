@@ -15,6 +15,7 @@ overAll = visitorData.groupby(['Year', 'Month']).sum().reset_index()
 #Draw a line chart to show the overall trend and set labels and titles for the chart.
 #overAll['Count']=overAll['Count'].apply(lambda x: math.log(x, 10))
 plt.plot(range(len(overAll['Count'])), overAll['Count'], marker='o')
+plt.xlim(0)
 plt.ylabel('Count(Million)')
 plt.xlabel('Times')
 plt.xticks(range(len(date))[::3], date[::3], rotation=90)
