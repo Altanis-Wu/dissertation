@@ -15,11 +15,13 @@ for x in working:
     plt.plot(data['Year'], data['Count'], marker='o')
 plt.legend(['Employed/self-employed (full or part time)',
                                       'In full or part time education',
-                                      'Unemployed/not working'])
-plt.ylabel('Count(Million)')
-plt.xlabel('Years')
-plt.xlim(2011)
-plt.title('Number of Visitors from Different Working Status for Day Visist in Scotland')
+                                      'Unemployed/not working'], fontsize=12)
+plt.ylabel('Count(Million)', fontsize=15)
+plt.xlabel('Years', fontsize=15)
+plt.xlim(2011, 2019)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.title('Number of Visitors from Different Working Status', fontsize=15)
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/WorkingOverYears.png')
 plt.show()

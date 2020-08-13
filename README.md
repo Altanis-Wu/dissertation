@@ -8,3 +8,5 @@ Dissertation for Tourism
 
 #Most relative type
 0.7给了最好的效果
+标签加大，标题加大，图例加大
+用

@@ -11,11 +11,13 @@ married=['married', 'not married']
 for x in married:
     data=overAll[overAll['Attribute']==x]
     plt.plot(data['Year'], data['Count'], marker='o')
-plt.legend(['Married', 'Not married'])
-plt.ylabel('Count(Million)')
-plt.xlabel('Years')
-plt.xlim(2011)
-plt.title('Number of Married Visitors for Day Visist in Scotland')
+plt.legend(['Married', 'Not married'], fontsize=15)
+plt.ylabel('Count(Million)', fontsize=15)
+plt.xlabel('Years', fontsize=15)
+plt.xlim(2011, 2019)
+plt.title('Number of Married Visitors for Day Visist in Scotland', fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/MarriedOverYears.png')
 plt.show()
