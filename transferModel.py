@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import scipy.stats as ss
 import numpy as np
-import statsmodels.api as sm
+from sklearn.metrics import mean_squared_error
 
 ageData=rfd.readFrom('visitor', 'age')
 total=ageData.groupby('Year').sum().reset_index()
@@ -32,8 +32,10 @@ for i in list:
     #MSE for female visitors is 4.386, and for married visitor is 4.462
     plt.plot(range(2011, 2021), predictions, marker='o')
     kf=ss.chisquare(total['Count'].to_list(), f_exp=predictions[:-1].flatten())
+    print(i)
     print(kf)
     print(rfd.meanAbsoluteError(total['Count'].to_list(), predictions[:-1].flatten()))
+    print(np.sqrt(mean_squared_error(total['Count'].to_list(), predictions[:-1].flatten())))
 plt.legend(['Actual value', 'Model basd on female visitor', 'Model basd on visitor using cars',
             'Model basd on married visitor', 'Model basd on working visitor'], fontsize=12)
 plt.xlabel('Year', fontsize=15)
