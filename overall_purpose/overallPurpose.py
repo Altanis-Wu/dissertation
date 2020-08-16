@@ -18,6 +18,7 @@ other = ["went on day trips/excursions for another leisure purpose not mentioned
 attributes=['visit friends or family', 'go shopping', 'go for food', 'go for entertainment', 'go for leisure activities',
             'for special event', 'go for health centre', 'other activities']
 visitor=['16-24', '25-34', '35-44', '45-54', '55-64', '65+']
+select=['visit friends or family', 'go for leisure activities', 'go for food']
 #the function used to classify the function
 def classifyPurpose(input):
     if input in visit:
@@ -60,31 +61,34 @@ plt.plot(speicalData['Year'], speicalData['Count'], marker='o')
 plt.plot(healthCentreData['Year'], healthCentreData['Count'], marker='o')
 plt.plot(otherData['Year'], otherData['Count'], marker='o')
 plt.legend(attributes)
-plt.xlabel('Years')
-plt.ylabel('Number of Visitors(Million)')
-plt.title('Overall Trend of Visitors for Different Purpose')
+plt.xlabel('Years', fontsize=15)
+plt.ylabel('Visitors(Million)', fontsize=15)
+plt.title('Overall Trend of Visitors for Different Purpose', fontsize=15)
+plt.xlim(2011, 2019)
+plt.ylim(0, 110)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
 plt.savefig('overAllPurpose.png')
 plt.show()
 #Calculate the sum of visitors who took different actions in recent 10 years.
 component=all_year_purpose.groupby('Action').sum().reset_index()
 plt.figure(figsize=(8, 8))
 plt.pie(component['Count'], autopct='%0.1f%%', explode=(0, 0, 0.05, 0, 0.05, 0, 0, 0.05))
-plt.legend(component['Action'])
-plt.title('The Composition of Visitors for Different Purpose')
+plt.legend(component['Action'], fontsize=12)
+plt.title('The Composition of Visitors for Different Purpose', fontsize=15)
 plt.savefig('compositionPurpose.png')
 plt.show()
-plt.figure(figsize=(10, 10))
+#plt.figure(figsize=(8, 8))
 #The age distribution for different purposes
 component=purpose_data.groupby(['Action', 'Attribute']).sum().reset_index()
-for i in range(1, len(attributes)+1):
-    ax=plt.subplot(4, 2, i)
-    tem = component[component['Action'] == attributes[i - 1]]
+for i in range(1, len(select)+1):
+    ax=plt.subplot(3, 1, i)
+    tem = component[component['Action'] == select[i - 1]]
     plt.bar(tem['Attribute'], tem['Count'])
-    plt.title('The Age Distribution on \"'+attributes[i-1]+'\"')
+    ax.set_title(select[i-1])
     plt.xlabel('Age')
-    plt.ylabel('Number of Visitors(Million)')
-    plt.subplots_adjust(hspace=0.5, wspace=0.3)
-plt.savefig('ageDistribution.png')
+    plt.ylabel('Visitors(Million)')
+#plt.savefig('ageDistribution.png')
 plt.show()
 
 #To show the relation between purpose and if the visitors has cars

@@ -7,7 +7,7 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima_model import ARIMA
 import scipy.stats as ss
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_squared_error
 #The function to make a Dickey-Fuller test
 def teststationarity(ts):
     dftest = adfuller(ts)

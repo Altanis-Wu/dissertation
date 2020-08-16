@@ -7,7 +7,8 @@ import statsmodels.api as sm
 
 ageData=rfd.readFrom('visitor', 'age')
 total=ageData.groupby('Year').sum().reset_index()
-list=[('married', 'married'), ('gender', 'female')]
+list=[('gender', 'female'), ('cars', 'access to car (1+)'), ('married', 'married'),
+      ('working', 'employed/self-employed (full or part time)')]
 plt.figure(figsize=(8, 8))
 plt.plot(total['Year'], total['Count'], marker='o')
 ARIMA=[141.4, 144.0, 146.5, 143.4, 136.7, 137.3]
@@ -39,5 +40,5 @@ plt.ylabel('Number of Visitors(Million)')
 plt.title('Total Number of Visitors Over years')
 plt.savefig('figures/predictionTransferModel.png')
 plt.show()
-print(ss.chisquare(total['Count'].to_list()[3:], f_exp=ARIMA))
-print(rfd.meanAbsoluteError(total['Count'].to_list()[3:], ARIMA))
+#print(ss.chisquare(total['Count'].to_list()[3:], f_exp=ARIMA))
+#print(rfd.meanAbsoluteError(total['Count'].to_list()[3:], ARIMA))

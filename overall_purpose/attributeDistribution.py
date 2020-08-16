@@ -34,8 +34,7 @@ def classifyPurpose(input):
     else:
         return "other activities"
 
-attributes=['visit friends or family', 'go shopping', 'go for food', 'go for entertainment', 'go for leisure activities',
-            'for special event', 'go for health centre', 'other activities']
+attributes=['visit friends or family', 'go for food', 'go for leisure activities',]
 #Read data from database
 purposeData = rfd.readFrom('action', 'activity')
 #List used to classify visitors and draw the figures.
@@ -52,17 +51,26 @@ visitorType=['age', 'cars', 'children', 'gender', 'social', 'working', 'married'
 purposeData['Action'] = purposeData['Action'].apply(lambda x:classifyPurpose(x))
 #Group the based on action as the detailed 15 actions are classified into 8 actions.
 purposeData=purposeData.groupby(['Year', 'Action', 'Visitor', 'Attribute']).sum().reset_index()
+
+def classify(x):
+    if x=='employed/self-employed (full or part time)':
+        return 'working'
+    elif x=='in full or part time education':
+        return 'education'
+    elif x=='unemployed/not working':
+        return 'unemployed'
+    else:
+        return x
 #Draw the figures for each action
 for action in attributes:
-    #For each type of visitors which took different action, draw the figures to find the trend.
-    for i in range(len(columns)):
-        plt.figure(figsize=(8, 8))
-        data = purposeData[(purposeData['Visitor']==visitorType[i]) & (purposeData['Action']==action)]
-        for column in columns[i]:
-            plt.plot(data[data['Attribute'] == column]['Year'], data[data['Attribute'] == column]['Count'], marker='o')
-        plt.legend(columns[i])
-        plt.title('\"' + action + '\" and ' + visitorType[i])
-        plt.xlabel('Year')
-        plt.ylabel('Count(Million)')
+    for i in range(len(visitorType)):
+        data=purposeData[(purposeData['Visitor']==visitorType[i]) & (purposeData['Action']==action)].groupby(['Action', 'Attribute']).sum().reset_index()
+        data['Attribute']=data['Attribute'].apply(lambda x: classify(x))
+        plt.bar(data['Attribute'], data['Count'])
+        plt.title('\"' + action + '\" and ' + visitorType[i], fontsize=15)
+        plt.xlabel('Visitor', fontsize=15)
+        plt.ylabel('Count(Million)', fontsize=15)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
         plt.savefig(visitorType[i] + '/' + action + '_' + visitorType[i] + '.png')
         plt.show()
