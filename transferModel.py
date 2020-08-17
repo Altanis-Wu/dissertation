@@ -4,6 +4,7 @@ from sklearn.linear_model import LinearRegression
 import scipy.stats as ss
 import numpy as np
 from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error
 
 ageData=rfd.readFrom('visitor', 'age')
 total=ageData.groupby('Year').sum().reset_index()
@@ -45,5 +46,6 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.savefig('figures/predictionTransferModel.png')
 plt.show()
-#print(ss.chisquare(total['Count'].to_list()[3:], f_exp=ARIMA))
-#print(rfd.meanAbsoluteError(total['Count'].to_list()[3:], ARIMA))
+print(ss.chisquare(total['Count'].to_list()[3:], f_exp=ARIMA))
+print(rfd.meanAbsoluteError(total['Count'].to_list()[3:], ARIMA))
+print(np.sqrt(mean_squared_error(total['Count'].to_list()[3:], ARIMA)))
