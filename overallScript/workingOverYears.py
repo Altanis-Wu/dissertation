@@ -12,16 +12,16 @@ working=['employed/self-employed (full or part time)',
 #Draw a line chart to show the overall trend and set labels and titles for the chart.
 for x in working:
     data=overAll[overAll['Attribute']==x]
-    plt.plot(data['Year'], data['Count'], marker='o')
+    plt.plot(data['Year'], data['Count'], marker='o', linewidth=3)
 plt.legend(['Employed/self-employed (full or part time)',
                                       'In full or part time education',
                                       'Unemployed/not working'], fontsize=12)
-plt.ylabel('Count(Million)', fontsize=15)
-plt.xlabel('Years', fontsize=15)
+plt.ylabel('Count(Million)', fontsize=15, weight='bold')
+plt.xlabel('Years', fontsize=15, weight='bold')
 plt.xlim(2011, 2019)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
-plt.title('Number of Visitors from Different Working Status', fontsize=15)
+plt.title('Number of Visitors from Different Working Status', fontsize=15, weight='bold')
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/WorkingOverYears.png')
 plt.show()

@@ -36,7 +36,7 @@ for i in range(len(names)):
         est2 = est.fit()
         print(est2.summary())
         plt.scatter(tem[tem['Attribute'] == item]['Count'], total)
-        plt.plot(tem[tem['Attribute'] == item]['Count'], predictions)
+        plt.plot(tem[tem['Attribute'] == item]['Count'], predictions, linewidth=3)
     plt.legend(attributes[i])
     plt.xlabel('Number of Visitors in Different Category')
     plt.ylabel('Number of total ')

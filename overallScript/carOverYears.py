@@ -10,12 +10,12 @@ overAll = visitorData.groupby(['Year', 'Attribute']).sum().reset_index()
 #Draw a line chart to show the overall trend and set labels and titles for the chart.
 for x in cars:
     data=overAll[overAll['Attribute']==x]
-    plt.plot(data['Year'], data['Count'], marker='o')
+    plt.plot(data['Year'], data['Count'], marker='o', linewidth=3)
 plt.legend(['Access to car (1+)', 'No access to car (0)'], fontsize=15)
-plt.ylabel('Count(Million)', fontsize=15)
-plt.xlabel('Years', fontsize=15)
+plt.ylabel('Count(Million)', fontsize=15, weight='bold')
+plt.xlabel('Years', fontsize=15, weight='bold')
 plt.xlim(2011, 2019)
-plt.title('Number of Visitors Using Cars in Scotland', fontsize=15)
+plt.title('Number of Visitors Using Cars in Scotland', fontsize=15, weight='bold')
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 #Save the chart as a 'PNG' file.

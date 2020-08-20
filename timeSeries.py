@@ -22,19 +22,19 @@ for i in range(len(list)):
     print("The linear model is: y = {:.5} + {:.5}x".format(reg.intercept_[0], reg.coef_[0][0]))
     predictions = reg.predict(x)
     kf = ss.chisquare(data['Count'].to_list(), f_exp=predictions.flatten())
-    plt.plot(data['Year'], predictions)
-    plt.xlabel('Year', fontsize=15)
-    plt.ylabel('Count(Million)', fontsize=15)
+    plt.plot(data['Year'], predictions, linewidth=3, color='red')
+    plt.xlabel('Year', fontsize=15, weight='bold')
+    plt.ylabel('Count(Million)', fontsize=15, weight='bold')
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     if i==3:
-        plt.title('Number of Visistors in Working', fontsize=15)
+        plt.title('Number of Visistors in Working', fontsize=15, weight='bold')
     elif i==0:
-        plt.title('Number of Female Visitors', fontsize=15)
+        plt.title('Number of Female Visitors', fontsize=15, weight='bold')
     elif i==2:
-        plt.title('Number of Married Visitors', fontsize=15)
+        plt.title('Number of Married Visitors', fontsize=15, weight='bold')
     elif i==1:
-        plt.title('Number of Visitors Using Cars', fontsize=15)
+        plt.title('Number of Visitors Using Cars', fontsize=15, weight='bold')
     plt.subplots_adjust(hspace=0.5, wspace=0.5)
     print(kf)
     print(rfd.meanAbsoluteError(data['Count'].to_list(), predictions.flatten()))
