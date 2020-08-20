@@ -19,8 +19,8 @@ plt.legend(['Employed/self-employed (full or part time)',
 plt.ylabel('Count(Million)', fontsize=15, weight='bold')
 plt.xlabel('Years', fontsize=15, weight='bold')
 plt.xlim(2011, 2019)
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
+plt.xticks(fontsize=12, weight='bold')
+plt.yticks(fontsize=12, weight='bold')
 plt.title('Number of Visitors from Different Working Status', fontsize=15, weight='bold')
 #Save the chart as a 'PNG' file.
 plt.savefig(os.path.dirname(os.getcwd())+'/figures/WorkingOverYears.png')

@@ -25,8 +25,8 @@ for i in range(len(list)):
     plt.plot(data['Year'], predictions, linewidth=3, color='red')
     plt.xlabel('Year', fontsize=15, weight='bold')
     plt.ylabel('Count(Million)', fontsize=15, weight='bold')
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
+    plt.xticks(fontsize=12, weight='bold')
+    plt.yticks(fontsize=12, weight='bold')
     if i==3:
         plt.title('Number of Visistors in Working', fontsize=15, weight='bold')
     elif i==0:
